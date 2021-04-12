@@ -1,10 +1,5 @@
-.theHeader {
-  width: 100vw;
-  height: 10vh;
-  background-color: pink;
-}
 
-.theMain {
+.App {
   width: 100vw;
   height: 86vh;
   background-color: blue;
@@ -12,15 +7,9 @@
   display: flex;
 }
 
-.theFooter {
-  width: 100vw;
-  height: 4vh;
-  background-color: red;
-}
-
 .left-panel {
   width: 20vw;
-  height: 86vh;
+  height: 100vh;
   background-color: gray;
   border-left: 10px solid black;
   border-right: 5px solid black;
@@ -31,17 +20,18 @@
 
 .center-panel {
   width: 40vw;
-  height: 86vh;
+  height: 100vh;
   background-color: purple;
   border-left: 5px solid black;
   border-right: 5px solid black;
   border-top: 10px solid black;
   border-bottom: 10px solid black;
+  
 }
 
 .right-panel {
   width: 40vw;
-  height: 86vh;
+  height: 100vh;
   background-color: orange;
   border-left: 5px solid black;
   border-right: 10px solid black;

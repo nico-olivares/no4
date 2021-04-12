@@ -1,18 +1,14 @@
-
 import './App.css';
+import LeftPanel from './left-panel/LeftPanel';
 
 function App() {
   return (
     <div className="App">
-      <header className='theHeader'>this is the header</header>
-      <main className='theMain'>
         <div className="left-panel">
-            left panel
+            <LeftPanel />
         </div>
         <div className="center-panel">center panel</div>
         <div className="right-panel">right panel</div>
-      </main>
-      <footer className="theFooter">this is the footer</footer>
     </div>
   );
 }
