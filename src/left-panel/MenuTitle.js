@@ -4,10 +4,13 @@ import { Accordion, Icon, Menu, Input, Label } from 'semantic-ui-react';
 import MenuItem from './MenuItem'
 
 
-function MenuTitle({key: itemIndex, title, children, activeIndex, setActiveIndex }) {
+function MenuTitle({index, title, children, activeIndex, setActiveIndex }) {
 
-    const handleClick = (e, titleProps) => {
-        const { index } = titleProps
+    const handleClick = (event) => {
+        // const { index } = titleProps
+        // const index = event.target.index;
+        
+        // console.log('the index', event.target.index);
         const newIndex = activeIndex === index ? -1 : index;
     
         setActiveIndex(newIndex);
@@ -19,9 +22,9 @@ function MenuTitle({key: itemIndex, title, children, activeIndex, setActiveIndex
     <div>
         <Accordion.Title
             value={title}
-            active={activeIndex === itemIndex}
-            index={itemIndex}
-            onClick={handleClick} >
+            active={activeIndex === index}
+            index={index}
+            onClick={(event) => handleClick(event)} >
             {title}
             {children.length > 0 ? 
                 <Icon name='dropdown' />
@@ -31,7 +34,9 @@ function MenuTitle({key: itemIndex, title, children, activeIndex, setActiveIndex
         {children.length > 0 ? 
         <Accordion.Content>
             <Menu vertical>
-                {children.map((item, index) => <MenuItem key={index} title={item} /> )}
+                {children.map((item, index) => {
+                return <MenuItem key={index} title={item} /> 
+                })}
             </Menu>
         </Accordion.Content>
         : '' }

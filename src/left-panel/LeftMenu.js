@@ -14,6 +14,7 @@ function LeftMenu() {
 			<Accordion styled>
 				<MenuTitle
 					key='1'
+					index='1'
 					title='Welcome'
 					children={[]}
 					activeIndex={activeIndex}
@@ -21,6 +22,7 @@ function LeftMenu() {
 				/>
 				<MenuTitle
 					key='2'
+					index='2'
 					title='Portfolio'
 					children={[
 						'Doomsday Preppers',
@@ -39,8 +41,9 @@ function LeftMenu() {
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 				/>
-				{/* <MenuTitle
+				<MenuTitle
 					key='3'
+					index='3'
 					title='Professional Experience'
 					children={['Programming', 'Educating', 'Finance', 'Military' ]}
 					activeIndex={activeIndex}
@@ -48,6 +51,7 @@ function LeftMenu() {
 				/>
         <MenuTitle
 					key='4'
+					index='4'
 					title='Education'
 					children={['Full Stack Developer', 'Education', 'Business Administration', "Naval Officer's Academy" ]}
 					activeIndex={activeIndex}
@@ -55,6 +59,7 @@ function LeftMenu() {
 				/>
         <MenuTitle
 					key='5'
+					index='5'
 					title='Skills'
 					children={['Hard Skills', 'Soft Skills' ]}
 					activeIndex={activeIndex}
@@ -62,6 +67,7 @@ function LeftMenu() {
 				/>
         <MenuTitle
 					key='6'
+					index='6'
 					title='Personal Life'
 					children={['Biography', 'Family', 'Interests' ]}
 					activeIndex={activeIndex}
@@ -69,6 +75,7 @@ function LeftMenu() {
 				/>
         <MenuTitle
 					key='7'
+					index='7'
 					title='Personal References'
 					children={[]}
 					activeIndex={activeIndex}
@@ -76,6 +83,7 @@ function LeftMenu() {
 				/>
         <MenuTitle
 					key='8'
+					index='8'
 					title='Resume'
 					children={[]}
 					activeIndex={activeIndex}
@@ -83,11 +91,12 @@ function LeftMenu() {
 				/>
         <MenuTitle
 					key='9'
+					index='9'
 					title='Contact Information'
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-				/> */}
+				/>
 
 
 

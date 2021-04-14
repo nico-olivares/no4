@@ -2,11 +2,11 @@
 // import {useState} from 'react';
 import { Accordion, Icon, Menu } from 'semantic-ui-react';
 
-function MenuItem({ key: itemIndex, title }) {
+function MenuItem({ title }) {
 	return (
 		<Menu.Item
-			key={itemIndex}
-			name={title}
+			
+			value={title}
 			active={false}
 			// onClick={handleItemClick}
 		>
