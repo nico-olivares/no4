@@ -1,3 +1,9 @@
 .footer-inner {
-    height: 8vh;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
+

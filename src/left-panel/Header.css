@@ -1,21 +1,23 @@
 .header-inner {
-    height: 10vh;
+    height: 90px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1vh;
 }
 
 .logo {
-    width: 8vh;
-    height: 8vh;
+    width: 60px;
+    height: 60px;
     border-radius: 4px;
-    margin: 1vh;
+    margin: 10px;
 }
 
 .header-name {
-    font-size: 4vh;
-    margin-bottom: 0vh;
+    font-size: 24px;
+    margin-bottom: 0px;
 }
 
 .header-title {
-    font-size: 3vh;
+    font-size: 20px;
 }
