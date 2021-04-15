@@ -4,7 +4,7 @@ import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
 
 function LeftMenu() {
-	const [activeIndex, setActiveIndex] = useState(0);
+	const [activeIndex, setActiveIndex] = useState('1');
 	// const [activeItem, setActiveItem] = useState('');
 
 	// const handleItemClick = (e, { name }) => setActiveItem(name);

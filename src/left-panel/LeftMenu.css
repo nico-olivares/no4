@@ -1,3 +1,4 @@
 .menu-inner {
     height: 84vh;
+    overflow-y: auto;
 }

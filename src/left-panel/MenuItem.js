@@ -1,14 +1,19 @@
 // import './MenuItem.css';
 // import {useState} from 'react';
-import { Accordion, Icon, Menu } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 
-function MenuItem({ title }) {
+function MenuItem({ title, activeMenu, setActiveMenu }) {
+
+	const handleItemClick = (event, { name }) => {
+		setActiveMenu(name);
+	}
+
 	return (
 		<Menu.Item
 			
-			value={title}
-			active={false}
-			// onClick={handleItemClick}
+			name={title}
+			active={title === activeMenu}
+			onClick={handleItemClick}
 		>
 			{title}
 		</Menu.Item>

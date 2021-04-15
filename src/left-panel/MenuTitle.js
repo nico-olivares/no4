@@ -6,11 +6,10 @@ import MenuItem from './MenuItem'
 
 function MenuTitle({index, title, children, activeIndex, setActiveIndex }) {
 
+    const [ activeMenu, setActiveMenu ] = useState('');
+
     const handleClick = (event) => {
-        // const { index } = titleProps
-        // const index = event.target.index;
         
-        // console.log('the index', event.target.index);
         const newIndex = activeIndex === index ? -1 : index;
     
         setActiveIndex(newIndex);
@@ -32,10 +31,10 @@ function MenuTitle({index, title, children, activeIndex, setActiveIndex }) {
             
         </Accordion.Title>
         {children.length > 0 ? 
-        <Accordion.Content>
+        <Accordion.Content active={activeIndex === index} >
             <Menu vertical>
-                {children.map((item, index) => {
-                return <MenuItem key={index} title={item} /> 
+                {children.map((item, i) => {
+                    return <MenuItem key={i} title={item} activeMenu={activeMenu} setActiveMenu={setActiveMenu} /> 
                 })}
             </Menu>
         </Accordion.Content>
