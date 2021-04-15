@@ -4,10 +4,10 @@ import './Header.css';
 function Header() {
   return (
     <div className="header-inner">
-        <img className="logo" href='%PUBLIC_URL%/media/NODevV4.png' alt='NODEV logo' />
+        <img className="logo" src='./media/NODevV4.png' alt='NODEV logo' />
         <div className="header-titles" >
-            <p>Nicolas Olivares</p>
-            <p>Full Stack Developer</p>
+            <p className="header-name" >Nicolas Olivares</p>
+            <p className="header-title" >Full Stack Developer</p>
         </div>
     </div>
   );

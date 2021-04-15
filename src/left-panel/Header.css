@@ -1,5 +1,21 @@
 .header-inner {
-    height: 8vh;
-
+    height: 10vh;
     display: flex;
+    margin-bottom: 1vh;
+}
+
+.logo {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 4px;
+    margin: 1vh;
+}
+
+.header-name {
+    font-size: 4vh;
+    margin-bottom: 0vh;
+}
+
+.header-title {
+    font-size: 3vh;
 }
