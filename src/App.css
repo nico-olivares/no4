@@ -18,6 +18,10 @@
   
 }
 
+.left-panel-reduced {
+  width: 3vw;
+}
+
 .center-panel {
   width: 40vw;
   height: 100vh;

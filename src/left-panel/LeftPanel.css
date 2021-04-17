@@ -1,0 +1,19 @@
+.left-panel-inner {
+    display: flex;
+    flex-basis: 20vw;
+}
+
+.left-panel-content {
+    width: 17vw;
+}
+
+.left-panel-arrow {
+    width: 20px;
+    height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
