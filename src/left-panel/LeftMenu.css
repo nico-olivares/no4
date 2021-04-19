@@ -1,4 +1,6 @@
 .menu-inner {
     height: calc(100vh - 160px);
+    padding-left: 10px;
     overflow-y: auto;
 }
+

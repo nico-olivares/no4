@@ -10,8 +10,8 @@ function LeftMenu() {
 	// const handleItemClick = (e, { name }) => setActiveItem(name);
 
 	return (
-		<div className='menu-inner'>
-			<Accordion styled>
+		<div className='menu-inner' >
+			<Accordion >
 				<MenuTitle
 					key='1'
 					index='1'

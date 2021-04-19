@@ -1,14 +1,13 @@
 
 .App {
   width: 100vw;
-  height: 86vh;
+  height: 100vh;
   background-color: blue;
 
   display: flex;
 }
 
 .left-panel {
-  width: 20vw;
   height: 100vh;
   background-color: white;
   border-left: 10px solid black;
@@ -18,12 +17,7 @@
   
 }
 
-.left-panel-reduced {
-  width: 3vw;
-}
-
 .center-panel {
-  width: 40vw;
   height: 100vh;
   background-color: purple;
   border-left: 5px solid black;
@@ -34,11 +28,74 @@
 }
 
 .right-panel {
-  width: 40vw;
   height: 100vh;
   background-color: orange;
   border-left: 5px solid black;
   border-right: 10px solid black;
   border-top: 10px solid black;
   border-bottom: 10px solid black;
+}
+
+@media (max-width: 400px) {
+  .left-panel-open {
+    width: 40vw;
+  }
+  .center-panel-open {
+    width: 60vw;
+  }
+  .center-panel {
+    display: none;
+  }
+
+  .center-panel-closed {
+    width: 98vw;
+  }
+}
+
+
+@media (min-width: 401px) and (max-width: 800px) {
+  .left-panel-open {
+    width: 20vw;
+  }
+  .center-panel-open {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1800px) {
+  .left-panel-open {
+    width: 14vw;
+  }
+  .center-panel-open {
+    width: 43vw;
+  }
+  .right-panel-open {
+    width: 43vw;
+  }
+
+  .center-panel-closed {
+    width: calc(50vw - 10px);
+  }
+  .right-panel-closed {
+    width: cald(50vw - 10px);
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 4000px) {
+  .left-panel-open {
+    width: 14vw;
+  }
+  .center-panel-open {
+    width: 43vw;
+  }
+  .right-panel-open {
+    width: 43vw;
+  }
+
+  .center-panel-closed {
+    width: calc(50vw - 10px);
+  }
+  .right-panel-closed {
+    width: calc(50vw - 10px);
+  }
 }

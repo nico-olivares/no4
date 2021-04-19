@@ -1,19 +1,46 @@
 .left-panel-inner {
     display: flex;
-    flex-basis: 20vw;
+    
 }
 
-.left-panel-content {
-    width: 17vw;
-}
+
 
 .left-panel-arrow {
     width: 20px;
-    height: calc(100vh - 160px);
+    height: 97.4vh;
     display: flex;
     align-items: center;
+    background-color: gray;
+    margin-right: 0px;
 }
 
-.hide {
-    display: none;
-}
+
+@media (max-width: 400px) {
+    .left-panel-content {
+      width: 40vw;
+    }
+    
+    
+  }
+  
+  
+  @media (min-width: 401px) and (max-width: 800px) {
+    .left-panel-content {
+        width: 40vw;
+      }
+      
+  }
+  
+  @media (min-width: 801px) and (max-width: 1800px) {
+    .left-panel-content {
+        width: calc(14vw - 40px);
+      }
+      
+  }
+
+  @media (min-width: 1801px) and (max-width: 4000px) {
+    .left-panel-content {
+        width: calc(14vw - 20px);
+      }
+      
+  }
