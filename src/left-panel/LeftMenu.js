@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
 
-function LeftMenu() {
+function LeftMenu({ setCenterPanel, setRightPanel }) {
 	const [activeIndex, setActiveIndex] = useState('1');
 	// const [activeItem, setActiveItem] = useState('');
 

@@ -4,8 +4,9 @@ import LeftMenu from './LeftMenu.js';
 import Footer from './Footer.js';
 import { Icon, Transition } from 'semantic-ui-react';
 
-function LeftPanel({ expandedMenu, setExpandedMenu }) {
-  const animationDuration = expandedMenu ? 700 : 50;
+function LeftPanel({ expandedMenu, setExpandedMenu, setCenterPanel, setRightPanel }) {
+
+  const animationDuration = expandedMenu ? 700 : 500;
   
 
   
@@ -13,10 +14,10 @@ function LeftPanel({ expandedMenu, setExpandedMenu }) {
 
   return (
     <div className={expandedMenu ? 'left-panel-inner left-panel-inner-open' : 'left-panel-inner left-panel-inner-closed' }  >
-        <Transition visible={expandedMenu} animation='fade down' duration={animationDuration} >
+        <Transition visible={expandedMenu} animation='fly right' duration={animationDuration} >
           <div className="left-panel-content"  >
             <Header  />
-            <LeftMenu  />
+            <LeftMenu setCenterPanel={setCenterPanel} setRightPanel={setRightPanel} />
             <Footer  />
           </div>
         </Transition>
