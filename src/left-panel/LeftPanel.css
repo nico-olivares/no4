@@ -7,7 +7,7 @@
 
 .left-panel-arrow {
     width: 20px;
-    height: 97.4vh;
+    height: calc(100vh - 20px);
     display: flex;
     align-items: center;
     background-color: gray;
@@ -15,32 +15,19 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 1400px) {
     .left-panel-content {
-      width: 40vw;
+      width: 180vw;
     }
     
-    
   }
   
   
-  @media (min-width: 401px) and (max-width: 800px) {
+  @media (min-width: 1401px) and (max-width: 4000px) {
     .left-panel-content {
-        width: 40vw;
+        width: 280px;
       }
       
   }
   
-  @media (min-width: 801px) and (max-width: 1800px) {
-    .left-panel-content {
-        width: calc(14vw - 40px);
-      }
-      
-  }
-
-  @media (min-width: 1801px) and (max-width: 4000px) {
-    .left-panel-content {
-        width: calc(14vw - 20px);
-      }
-      
-  }
+  
