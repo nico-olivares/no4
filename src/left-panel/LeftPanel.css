@@ -1,0 +1,33 @@
+.left-panel-inner {
+    display: flex;
+    
+}
+
+
+
+.left-panel-arrow {
+    width: 20px;
+    height: calc(100vh - 20px);
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    margin-right: 0px;
+}
+
+
+@media (max-width: 1400px) {
+    .left-panel-content {
+      width: 180vw;
+    }
+    
+  }
+  
+  
+  @media (min-width: 1401px) and (max-width: 4000px) {
+    .left-panel-content {
+        width: 280px;
+      }
+      
+  }
+  
+  
