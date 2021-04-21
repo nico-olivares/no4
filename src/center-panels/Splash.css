@@ -1,0 +1,11 @@
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-image {
+    width: 520px;
+    margin: 20px;
+}

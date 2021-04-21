@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
 
-function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
+function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 	const [activeIndex, setActiveIndex] = useState('1');
 	// const [activeItem, setActiveItem] = useState('');
 
@@ -19,9 +19,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
 				<MenuTitle
 					key='2'
@@ -43,9 +43,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
 				<MenuTitle
 					key='3'
@@ -54,9 +54,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={['Programming', 'Educating', 'Finance', 'Military' ]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
         <MenuTitle
 					key='4'
@@ -65,9 +65,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={['Full Stack Developer', 'Education', 'Business Administration', "Naval Officer's Academy" ]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
         <MenuTitle
 					key='5'
@@ -76,9 +76,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={['Hard Skills', 'Soft Skills' ]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
         <MenuTitle
 					key='6'
@@ -87,9 +87,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={['Biography', 'Family', 'Interests' ]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
         <MenuTitle
 					key='7'
@@ -98,9 +98,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
         <MenuTitle
 					key='8'
@@ -109,9 +109,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
         <MenuTitle
 					key='9'
@@ -120,9 +120,9 @@ function LeftMenu({ setCenterPanel, setRightPanel, rightPanel }) {
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
-					setCenterPanel={setCenterPanel}
-					setRightPanel={setRightPanel}
-					rightPanel={rightPanel}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
 				/>
 
 

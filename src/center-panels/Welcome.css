@@ -1,0 +1,29 @@
+.welcome-container {
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.image-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.portrait {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+
+p {
+    font-size: 25px;
+}

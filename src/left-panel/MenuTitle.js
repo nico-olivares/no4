@@ -9,9 +9,9 @@ function MenuTitle({
 	children,
 	activeIndex,
 	setActiveIndex,
-	setCenterPanel,
-	setRightPanel,
-	rightPanel,
+	setCenterPanelName,
+	setRightPanelName,
+	rightPanelName,
 }) {
 	const [activeMenu, setActiveMenu] = useState('');
 
@@ -19,9 +19,9 @@ function MenuTitle({
 		const newIndex = activeIndex === index ? -1 : index;
 
 		setActiveIndex(newIndex);
-		if (children.length === 0) {
-			setCenterPanel(rightPanel);
-			setRightPanel(title);
+		if ((children.length === 0) && (rightPanelName !== title)) {
+			setCenterPanelName(rightPanelName);
+			setRightPanelName(title);
 		}
 	};
 
@@ -46,9 +46,9 @@ function MenuTitle({
 									title={item}
 									activeMenu={activeMenu}
 									setActiveMenu={setActiveMenu}
-									setCenterPanel={setCenterPanel}
-									setRightPanel={setRightPanel}
-									rightPanel={rightPanel}
+									setCenterPanelName={setCenterPanelName}
+									setRightPanelName={setRightPanelName}
+									rightPanelName={rightPanelName}
 								/>
 							);
 						})}
