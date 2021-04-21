@@ -2,10 +2,12 @@
 // import {useState} from 'react';
 import { Menu } from 'semantic-ui-react';
 
-function MenuItem({ title, activeMenu, setActiveMenu }) {
+function MenuItem({ title, activeMenu, setActiveMenu, setCenterPanel, setRightPanel, rightPanel }) {
 
 	const handleItemClick = (event, { name }) => {
 		setActiveMenu(name);
+		setCenterPanel(rightPanel);
+		setRightPanel(title);
 	}
 
 	return (
