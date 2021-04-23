@@ -1,5 +1,8 @@
 import Welcome from "./Welcome";
 import Splash from "./Splash";
+import Portfolio from "./Portfolio";
+
+import getPortfolioItem from "./portfolioItems";
 
 function CenterPanel({ panelName }) {
 
@@ -11,10 +14,10 @@ function CenterPanel({ panelName }) {
         return <Welcome />;
         
         case 'Doomsday Preppers':
-            return <div>Doomsday Preppers</div>;
+            return <Portfolio item={getPortfolioItem('Doomsday Preppers')} />;
             
         default:
-            return <div>Default</div>;
+            return <div>Nothing to see</div>;
             
   }
 

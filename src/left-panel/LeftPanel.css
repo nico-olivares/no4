@@ -10,7 +10,7 @@
     height: calc(100vh - 20px);
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(216, 211, 211);
     margin-right: 0px;
 }
 
