@@ -11,7 +11,9 @@ const portfolioItems = [
 ]
 
 function getPortfolioItem(name) {
-    return portfolioItems.find((item) => item.name === name);
+    return portfolioItems.find((item) => item.title === name);
 }
+
+
 
 export default getPortfolioItem;
