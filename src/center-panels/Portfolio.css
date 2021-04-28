@@ -1,0 +1,9 @@
+.portfolio-container {
+    padding: 10px;
+    padding-right: 30px;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+}
