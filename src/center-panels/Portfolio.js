@@ -26,12 +26,12 @@ return (
             </Grid.Row>
             <Grid.Row>
                     <Grid.Column>
-                        <p>Github: <a href={item.github} >{item.github}</a></p>
+                        <p>Github: <a href={item.github} target="_blank" >{item.github}</a></p>
                     </Grid.Column>
             </Grid.Row>
             <Grid.Row>
                     <Grid.Column>
-                        <p>Deployment: <a href={item.deployment} >{item.deployment}</a></p>
+                        <p>Deployment: <a href={item.deployment} target="_blank" >{item.deployment}</a></p>
                     </Grid.Column>
             </Grid.Row>
             <Grid.Row centered columns={1} >
@@ -40,32 +40,18 @@ return (
                         onClose={() => setOpen(false)}
                         onOpen={() => setOpen(true)}
                         open={open}
-                        trigger={<a href='#' ><Image src={item.image} size='large' /></a>}
+                        trigger={<a href='#' ><Image src={item.image} fluid /></a>}
                         >
-                        <Modal.Header>Select a Photo</Modal.Header>
+                        <Modal.Header>{item.title}</Modal.Header>
                         <Modal.Content image>
-                            <Image size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' wrapped />
-                            <Modal.Description>
-                            <Header>Default Profile Image</Header>
-                            <p>
-                                We've found the following gravatar image associated with your e-mail
-                                address.
-                            </p>
-                            <p>Is it okay to use this photo?</p>
-                            </Modal.Description>
-                        </Modal.Content>
-                        <Modal.Actions>
-                            <Button color='black' onClick={() => setOpen(false)}>
-                            Nope
-                            </Button>
-                            <Button
-                            content="Yep, that's me"
-                            labelPosition='right'
-                            icon='checkmark'
-                            onClick={() => setOpen(false)}
-                            positive
+                            <Embed
+                                icon='right circle arrow'
+                                placeholder={item.image}
+                                url={item.deployment}
+                                active='true'
                             />
-                        </Modal.Actions>
+                        </Modal.Content>
+                        
                     </Modal>
                 </Grid.Column>
             </Grid.Row>
