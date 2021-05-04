@@ -10,29 +10,8 @@ return (
         <Grid divided >
             <Grid.Row>
                 <Grid.Column>
-                    <h1>Title: {item.title}</h1>
+                    <h1 style={{textAlign: 'center'}} >{item.title}</h1>
                 </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-                <Grid.Column>
-                    <p>Readme: {item.description}</p>
-                </Grid.Column>
-            </Grid.Row>
-            <Grid.Row columns={4} >
-                <Grid.Column>
-                    <p>Stack:</p>
-                </Grid.Column>
-                {item.stack.map((stackItem) => <Grid.Column><p>{stackItem}</p></Grid.Column>)}
-            </Grid.Row>
-            <Grid.Row>
-                    <Grid.Column>
-                        <p>Github: <a href={item.github} target="_blank" >{item.github}</a></p>
-                    </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-                    <Grid.Column>
-                        <p>Deployment: <a href={item.deployment} target="_blank" >{item.deployment}</a></p>
-                    </Grid.Column>
             </Grid.Row>
             <Grid.Row centered columns={1} >
                 <Grid.Column className='image-column'>
@@ -55,6 +34,29 @@ return (
                     </Modal>
                 </Grid.Column>
             </Grid.Row>
+            
+            <Grid.Row columns={4} >
+                <Grid.Column>
+                    <p>Stack:</p>
+                </Grid.Column>
+                {item.stack.map((stackItem) => <Grid.Column><p>{stackItem}</p></Grid.Column>)}
+            </Grid.Row>
+            <Grid.Row>
+                    <Grid.Column>
+                        <p>Github: <a href={item.github} target="_blank" >{item.github}</a></p>
+                    </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+                    <Grid.Column>
+                        <p>Deployment: <a href={item.deployment} target="_blank" >{item.deployment}</a></p>
+                    </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+                <Grid.Column>
+                    <p>{item.description}</p>
+                </Grid.Column>
+            </Grid.Row>
+            
         </Grid  >
     </div>
 )
