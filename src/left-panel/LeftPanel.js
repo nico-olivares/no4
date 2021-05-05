@@ -4,7 +4,7 @@ import LeftMenu from './LeftMenu.js';
 import Footer from './Footer.js';
 import { Icon, Transition } from 'semantic-ui-react';
 
-function LeftPanel({ expandedMenu, setExpandedMenu, setCenterPanelName, setRightPanelName, rightPanelName }) {
+function LeftPanel({ expandedMenu, setExpandedMenu, setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
 
   const animationDuration = expandedMenu ? 700 : 500;
   
@@ -17,7 +17,7 @@ function LeftPanel({ expandedMenu, setExpandedMenu, setCenterPanelName, setRight
         <Transition visible={expandedMenu} animation='fly right' duration={animationDuration} >
           <div className="left-panel-content"  >
             <Header  />
-            <LeftMenu setCenterPanelName={setCenterPanelName} setRightPanelName={setRightPanelName} rightPanelName={rightPanelName} />
+            <LeftMenu setCenterPanelName={setCenterPanelName} setRightPanelName={setRightPanelName} rightPanelName={rightPanelName} setPanelIsVisible={setPanelIsVisible} />
             <Footer  />
           </div>
         </Transition>

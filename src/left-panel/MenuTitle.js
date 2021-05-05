@@ -12,6 +12,7 @@ function MenuTitle({
 	setCenterPanelName,
 	setRightPanelName,
 	rightPanelName,
+	setPanelIsVisible
 }) {
 	const [activeMenu, setActiveMenu] = useState('');
 
@@ -20,10 +21,18 @@ function MenuTitle({
 
 		setActiveIndex(newIndex);
 		if ((children.length === 0) && (rightPanelName !== title)) {
-			setCenterPanelName(rightPanelName);
-			setRightPanelName(title);
+			setPanelIsVisible(false);
+			setTimeout(setPanels, 3000);
 		}
 	};
+
+	const setPanels = () => {
+			setCenterPanelName(rightPanelName);
+			setRightPanelName(title);
+			setPanelIsVisible(true);
+	}
+
+
 
 	return (
 		<div>
@@ -49,6 +58,7 @@ function MenuTitle({
 									setCenterPanelName={setCenterPanelName}
 									setRightPanelName={setRightPanelName}
 									rightPanelName={rightPanelName}
+									setPanelIsVisible={setPanelIsVisible}
 								/>
 							);
 						})}

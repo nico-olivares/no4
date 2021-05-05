@@ -39,7 +39,7 @@ return (
                 <Grid.Column>
                     <p>Stack:</p>
                 </Grid.Column>
-                {item.stack.map((stackItem) => <Grid.Column><p>{stackItem}</p></Grid.Column>)}
+                {item.stack.map((stackItem, i) => <Grid.Column key={i} ><p>{stackItem}</p></Grid.Column>)}
             </Grid.Row>
             <Grid.Row>
                     <Grid.Column>

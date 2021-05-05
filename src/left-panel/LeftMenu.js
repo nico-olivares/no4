@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
 
-function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
+function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
 	const [activeIndex, setActiveIndex] = useState('1');
 	// const [activeItem, setActiveItem] = useState('');
 
@@ -22,6 +22,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
 				<MenuTitle
 					key='2'
@@ -46,6 +47,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
 				<MenuTitle
 					key='3'
@@ -57,6 +59,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
         <MenuTitle
 					key='4'
@@ -68,6 +71,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
         <MenuTitle
 					key='5'
@@ -79,6 +83,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
         <MenuTitle
 					key='6'
@@ -90,6 +95,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
         <MenuTitle
 					key='7'
@@ -101,6 +107,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
         <MenuTitle
 					key='8'
@@ -112,6 +119,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
         <MenuTitle
 					key='9'
@@ -123,6 +131,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName }) {
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
 				/>
 
 			</Accordion>
