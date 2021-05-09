@@ -25,7 +25,7 @@ function CenterPanel({ panelName, panelIsVisible }) {
         )
         
         case 'Doomsday Preppers':
-            return <Portfolio key='1' item={getPortfolioItem('Doomsday Preppers')} />;
+            return <Portfolio key='1' item={getPortfolioItem('Doomsday Preppers')} panelIsVisible={panelIsVisible} />;
             
         default:
             return <div>Nothing to see</div>;
