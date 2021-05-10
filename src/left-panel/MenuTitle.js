@@ -19,10 +19,11 @@ function MenuTitle({
 	const handleClick = (event) => {
 		const newIndex = activeIndex === index ? -1 : index;
 
+		//not yet implemented. The idea is to wait a tad to allow the out animation to show. It wasn't working though
 		setActiveIndex(newIndex);
 		if ((children.length === 0) && (rightPanelName !== title)) {
 			setPanelIsVisible(false);
-			setTimeout(setPanels, 3000);
+			setTimeout(setPanels, 0);
 		}
 	};
 

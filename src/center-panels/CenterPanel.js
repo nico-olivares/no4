@@ -13,14 +13,14 @@ function CenterPanel({ panelName, panelIsVisible }) {
       case 'splash':
           return (
             
-              <Splash />
+              <Splash panelIsVisible={panelIsVisible} />
             
           )
           
         case 'Welcome':
         return (
             
-              <Welcome />
+              <Welcome panelIsVisible={panelIsVisible} />
             
         )
         

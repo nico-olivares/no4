@@ -37,18 +37,18 @@ function App() {
 						: 'center-panel center-panel-closed'
 				}
 			>
-				<Transition visible={panelIsVisible} animation='fly right' duration={400}>
+				
 					<CenterPanel key='1' panelName={centerPanelName} panelIsVisible={panelIsVisible} />
-				</Transition >
+				
 			</div>
 			<div
 				className={
 					expandedMenu ? 'right-panel right-panel-open' : 'right-panel right-panel-closed'
 				}
 			>
-				<Transition visible={panelIsVisible} animation='fly right' duration={400} >
+				
 					<CenterPanel key='2' panelName={rightPanelName} panelIsVisible={panelIsVisible} />
-				</Transition >
+				
 			</div>
 		</div>
 	);
