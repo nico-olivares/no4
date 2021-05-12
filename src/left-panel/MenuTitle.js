@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { Accordion, Icon, Menu, Input, Label } from 'semantic-ui-react';
 import MenuItem from './MenuItem';
 
-function MenuTitle({
+//implements the menu accordion with all the main titles. It also calls for the subtitles when needed and puts the whole menu together.
+export default function MenuTitle({
 	index,
 	title,
 	children,
@@ -19,9 +20,9 @@ function MenuTitle({
 	const handleClick = (event) => {
 		const newIndex = activeIndex === index ? -1 : index;
 
-		//not yet implemented. The idea is to wait a tad to allow the out animation to show. It wasn't working though
+		
 		setActiveIndex(newIndex);
-		if ((children.length === 0) && (rightPanelName !== title)) {
+		if ((children.length === 0) && ((rightPanelName.title !== title))) {
 			setPanelIsVisible(false);
 			setTimeout(setPanels, 0);
 		}
@@ -29,11 +30,9 @@ function MenuTitle({
 
 	const setPanels = () => {
 			setCenterPanelName(rightPanelName);
-			setRightPanelName(title);
+			setRightPanelName({title, subtitle: ''});
 			setPanelIsVisible(true);
 	}
-
-
 
 	return (
 		<div>
@@ -53,7 +52,8 @@ function MenuTitle({
 							return (
 								<MenuItem
 									key={i}
-									title={item}
+									title={title}
+									subtitle={item}
 									activeMenu={activeMenu}
 									setActiveMenu={setActiveMenu}
 									setCenterPanelName={setCenterPanelName}
@@ -72,4 +72,3 @@ function MenuTitle({
 	);
 }
 
-export default MenuTitle;

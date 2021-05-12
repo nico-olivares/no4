@@ -2,7 +2,8 @@ import './Portfolio.css'
 import { Grid, Embed, Modal, Button, Image, Header, Transition } from 'semantic-ui-react';
 import { useState } from 'react'
 
-function Portfolio({item, panelIsVisible }) {
+//portfolio component. This component gets reused for each different portfolio item
+export default function Portfolio({item, panelIsVisible }) {
     const [ open, setOpen ] = useState(false);
 
 return (
@@ -20,7 +21,7 @@ return (
                             onClose={() => setOpen(false)}
                             onOpen={() => setOpen(true)}
                             open={open}
-                            trigger={<a href='#' ><Image src={item.image} fluid /></a>}
+                            trigger={<a href='#' ><Image src={`./media/apps/${item.image}`} fluid /></a>}
                             >
                             <Modal.Header>{item.title}</Modal.Header>
                             <Modal.Content image>
@@ -63,5 +64,3 @@ return (
     </div>
 )
 }
-
-export default Portfolio;

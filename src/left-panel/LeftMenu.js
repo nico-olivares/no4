@@ -3,11 +3,10 @@ import { useState } from 'react';
 import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
 
-function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
-	const [activeIndex, setActiveIndex] = useState('1');
-	// const [activeItem, setActiveItem] = useState('');
-
-	// const handleItemClick = (e, { name }) => setActiveItem(name);
+//implements the left menu. The menu is a list of all the possible options
+export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
+	const [ activeIndex, setActiveIndex ] = useState('1');
+	
 
 	return (
 		<div className='menu-inner' >
@@ -52,7 +51,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPa
 				<MenuTitle
 					key='3'
 					index='3'
-					title='Professional Experience'
+					title='Experience'
 					children={['Programming', 'Educating', 'Finance', 'Military' ]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
@@ -88,7 +87,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPa
         <MenuTitle
 					key='6'
 					index='6'
-					title='Personal Life'
+					title='Life'
 					children={['Biography', 'Family', 'Interests' ]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
@@ -100,7 +99,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPa
         <MenuTitle
 					key='7'
 					index='7'
-					title='Personal References'
+					title='References'
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
@@ -124,7 +123,7 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPa
         <MenuTitle
 					key='9'
 					index='9'
-					title='Contact Information'
+					title='Contact'
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
@@ -139,4 +138,3 @@ function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPa
 	);
 }
 
-export default LeftMenu;

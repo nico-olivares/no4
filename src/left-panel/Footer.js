@@ -2,7 +2,8 @@ import './Footer.css';
 import { Icon } from 'semantic-ui-react'
 
 
-function Footer() {
+//Implements the three icons at the foot of the left menu. Github, email, and linkedIn
+export default function Footer() {
   return (
     <div className="footer-inner">
         <a href='https://github.com/nico-olivares' target='_blank'>
@@ -18,4 +19,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+

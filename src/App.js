@@ -6,10 +6,10 @@ import CenterPanel from './center-panels/CenterPanel';
 
 function App() {
 
-	const [expandedMenu, setExpandedMenu] = useState(false);
-	const [centerPanelName, setCenterPanelName] = useState('splash');
-	const [rightPanelName, setRightPanelName] = useState('Welcome');
-	const [ panelIsVisible, setPanelIsVisible] = useState(true);
+	const [ expandedMenu, setExpandedMenu ] = useState(true);
+	const [ centerPanelName, setCenterPanelName ] = useState({title: 'splash', subtitle: ''});
+	const [ rightPanelName, setRightPanelName ] = useState({title: 'Welcome', subtitle: ''});
+	const [ panelIsVisible, setPanelIsVisible ] = useState(true);
 
 
   

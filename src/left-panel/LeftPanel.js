@@ -4,14 +4,11 @@ import LeftMenu from './LeftMenu.js';
 import Footer from './Footer.js';
 import { Icon, Transition } from 'semantic-ui-react';
 
-function LeftPanel({ expandedMenu, setExpandedMenu, setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
+//puts together the three elements of the menu panel. Header, footer, and actual menu.
+export default function LeftPanel({ expandedMenu, setExpandedMenu, setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
 
   const animationDuration = expandedMenu ? 700 : 500;
   
-
-  
-
-
   return (
     <div className={expandedMenu ? 'left-panel-inner left-panel-inner-open' : 'left-panel-inner left-panel-inner-closed' }  >
         <Transition visible={expandedMenu} animation='fly right' duration={animationDuration} >
@@ -28,4 +25,4 @@ function LeftPanel({ expandedMenu, setExpandedMenu, setCenterPanelName, setRight
   );
 }
 
-export default LeftPanel;
+

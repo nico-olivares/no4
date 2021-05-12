@@ -1,7 +1,8 @@
 import './Header.css';
 
 
-function Header() {
+//implements the header at the left menu. The header has my logo and name.
+export default function Header() {
   return (
     <div className="header-inner">
         <img className="logo" src='./media/NODevV4.png' alt='NODEV logo' />
@@ -13,4 +14,4 @@ function Header() {
   );
 }
 
-export default Header;
+

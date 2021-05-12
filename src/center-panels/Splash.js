@@ -1,8 +1,8 @@
 import './Splash.css';
 import { Transition } from 'semantic-ui-react';
 
-function Splash({ panelIsVisible }) {
-
+//this component is the very first center panel. Currently it has a couple of photos from chile
+export default function Splash({ panelIsVisible }) {
 
     return (
         <Transition visible={panelIsVisible} transition='fly left' duration={400} >
@@ -12,8 +12,4 @@ function Splash({ panelIsVisible }) {
             </div>
         </Transition >
     )
-
-
 }
-
-export default Splash;
