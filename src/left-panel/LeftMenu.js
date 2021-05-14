@@ -3,6 +3,10 @@ import { useState } from 'react';
 import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
 import getPortfolioItem from '../data/portfolioItems';
+import getExperienceItem from '../data/experienceItems';
+import getEducationItem from '../data/educationItems';
+import getLifeItem from '../data/lifeItems';
+import getSkillsItem from '../data/skillsItems';
 
 //implements the left menu. The menu is a list of all the possible options
 export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
@@ -40,7 +44,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					key='3'
 					index='3'
 					title='Experience'
-					children={['Programming', 'Educating', 'Finance', 'Military' ]}
+					children={getExperienceItem('all items')}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
@@ -52,7 +56,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					key='4'
 					index='4'
 					title='Education'
-					children={['Full Stack Developer', 'Education', 'Business Administration', "Naval Officer's Academy" ]}
+					children={getEducationItem('all items')}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
@@ -64,7 +68,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					key='5'
 					index='5'
 					title='Skills'
-					children={['Hard Skills', 'Soft Skills' ]}
+					children={getSkillsItem('all items')}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
