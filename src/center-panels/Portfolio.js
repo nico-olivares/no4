@@ -24,7 +24,7 @@ return (
                             trigger={<a href='#' ><Image src={`./media/apps/${item.image}`} fluid /></a>}
                             >
                             <Modal.Header>{item.title}</Modal.Header>
-                            <Modal.Content image>
+                            <Modal.Content >
                                 <Embed
                                     icon='right circle arrow'
                                     placeholder={item.image}

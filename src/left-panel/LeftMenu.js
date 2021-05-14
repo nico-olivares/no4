@@ -2,6 +2,7 @@ import './LeftMenu.css';
 import { useState } from 'react';
 import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
+import getPortfolioItem from '../data/portfolioItems';
 
 //implements the left menu. The menu is a list of all the possible options
 export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
@@ -27,20 +28,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					key='2'
 					index='2'
 					title='Portfolio'
-					children={[
-						'Doomsday Preppers',
-						'webkey',
-						'Hermes News',
-						'Harvard Art',
-						'Arcade Central',
-						'Calculator',
-						'Retro Draw',
-						'Matrix Rain',
-						'Number Sense',
-						'Add and Subtract',
-						'Basic Math',
-						'Sight Words Center',
-					]}
+					children={getPortfolioItem('all items')}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
