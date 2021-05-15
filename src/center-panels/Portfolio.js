@@ -8,7 +8,7 @@ export default function Portfolio({item, panelIsVisible }) {
 
 return (
     <div className="portfolio-container">
-        <Transition visible={panelIsVisible} animation='fly left' duration={400}  >
+        <Transition visible={panelIsVisible} animation='fly left' duration={1500}  >
             <Grid divided >
                 <Grid.Row>
                     <Grid.Column>
