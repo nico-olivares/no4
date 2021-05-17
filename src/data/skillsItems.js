@@ -2,16 +2,39 @@
 
 const skillsItems = [
     {
-        title: 'Doomsday Preppers', 
-        description: `An eCommerce website tailored towards the ddoomsday prepper community. It has relevant doomsday news, and an array of preparation/readiness products.`, 
-        stack: ['React', 'Bootstrap', 'JavaScript', 'Express', 'node', 'PostgreSQL', 'webtoken', 'npm'], 
-        github: 'https://github.com/nico-olivares/pandemicprep2', 
-        deployment: 'https://panprep2.herokuapp.com/', 
-        image: 'doomsday.png'
-    }
+        title: 'Hard Skills', 
+        skills: [
+            {
+                title: 'Programming - Proficiency: Extensive', 
+                skills: [
+                    'React.js', 'JavaScript', 'HTML', 'CSS', 'Express', 'Node.js', 'PostgreSQL', 'JQuery', 'npm', 'git', 'github', 'Java'
+            ]
+            }, {
+                title: 'Programming - Proficiency: Intermediate', 
+                skills: [ 'Java', 'Svelte' ]
+            }, {
+                title: 'General Software',
+                skills: ['Word', 'PowerPoint', 'Excel', 'Adobe Creative Cloud', 'mac ecosystem']
+            }
+        ]
+            }, {
+                title: 'Soft Skills',
+                skills: [
+                    {
+                        title: 'Soft Skills',
+                        skills: [
+                            'excellent communicator (teacher)', 'cordial and likable', 'problem solver', 'critical thinker', 'honest', 'fast learner', 'self motivated', 'curious', 'life long learner', 'polymath'
+                        ]
+                    }
+                ]
+            }
+            
 ]
 
 function getSkillsItem(name) {
+    if (name === 'all items') {
+        return skillsItems.map(item => item.title);
+    }
     return skillsItems.find((item) => item.title === name);
 }
 
