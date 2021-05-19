@@ -42,7 +42,7 @@ export default function MenuTitle({
 				index={index}
 				onClick={(event) => handleClick(event)}
 			>
-				{title}
+				{title  === 'Resume' ? 'Résumé' : title}
 				{children.length > 0 ? <Icon name='dropdown' /> : ''}
 			</Accordion.Title>
 			{children.length > 0 ? (

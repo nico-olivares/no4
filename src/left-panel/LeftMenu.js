@@ -80,7 +80,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					key='6'
 					index='6'
 					title='Life'
-					children={['Biography', 'Family', 'Interests' ]}
+					children={getLifeItem('all items')}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
