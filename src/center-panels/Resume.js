@@ -1,24 +1,14 @@
 import React from 'react';
 import './Resume.css';
-import { Embed } from 'semantic-ui-react';
+import { Transition } from 'semantic-ui-react';
 
-export default function Resume() {
+export default function Resume({ panelIsVisible}) {
 
 
     return (
-        <Embed
-        active={true}
-        aspectRation='4:8'
-    icon='right circle arrow'
-    iframe={{
-        style: {
-            width: '100%',
-            height: '100%',
-        },
-    }}
-    placeholder='./docs/Olivares.Nicolas.Resume.pdf'
-    url='./docs/Olivares.Nicolas.Resume.pdf'
-  />
+        <Transition visible={panelIsVisible} animation='fly left' duration={1500}  >
+                <iframe title='resume' width='100%' height='100%' src='./docs/Olivares.Nicolas.Resume.pdf' />
+        </Transition>
     )
 
 }
