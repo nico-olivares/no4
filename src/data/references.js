@@ -47,7 +47,7 @@ const referencesItems = [
 ]
 
 function getReferences() {
-    return Object.assign({}, referencesItems);
+    return referencesItems;
 }
 
 
