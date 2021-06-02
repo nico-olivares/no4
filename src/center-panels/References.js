@@ -10,7 +10,7 @@ export default function References({ panelIsVisible }) {
     return (
         <Transition visible={panelIsVisible} animation='fly left' duration={1500}>
             <div>
-                <Carousel references={getReferences()} interval={3000} />
+                <Carousel references={getReferences()} interval={30000} />
             </div>
         </Transition >
     )

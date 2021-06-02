@@ -7,22 +7,23 @@ import './Carousel.css'
 export default function Carousel({ references, interval }) {
 const back = '<<';
 const forward = '>>';
+let timer = null;
 
 const myUseEffectTimeout = () => {
-    setTimeout(() => {
+    timer = setTimeout(() => {
         if (activeIndex === references.length -1) {
             setActiveIndex(0);
         } else {
             setActiveIndex(activeIndex + 1);
         }
-    }, interval
-)
+    }, interval);
 }
+
 
 const [ activeIndex, setActiveIndex ] = useState(0);
 
 useEffect(() => {
-    clearTimeout(myUseEffectTimeout);
+    clearTimeout(timer);
     myUseEffectTimeout();
 }, [activeIndex]);
 
@@ -34,7 +35,7 @@ useEffect(() => {
                 } else {
                     setActiveIndex(activeIndex - 1);
                 }
-                clearTimeout(myUseEffectTimeout);
+                clearTimeout(timer);
             }} >
                 {back}
             </Button>
@@ -54,7 +55,7 @@ useEffect(() => {
                 } else {
                     setActiveIndex(activeIndex + 1);
                 }
-                clearTimeout(myUseEffectTimeout);
+                clearTimeout(timer);
             }} >
                 {forward}
             </Button>
