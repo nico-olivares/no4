@@ -56,7 +56,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					key='4'
 					index='4'
 					title='Education'
-					children={getEducationItem('all items')}
+					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
@@ -68,7 +68,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					key='5'
 					index='5'
 					title='Skills'
-					children={getSkillsItem('all items')}
+					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}

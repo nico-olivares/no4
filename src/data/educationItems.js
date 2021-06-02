@@ -16,6 +16,11 @@ const educationItems = [
         institution: 'Universidad Adolfo Ibañez',
         years: '1993-1997',
         description: `I attended a five year business administration program. In Chile that program is not considered an MBA, but because it's more than a 4 year degree here, the degree accreditation firm that transcribed my transcripts from Chile to U.S. equivalent stated that my degree here would equate to an MBA. Either way I was taught al the ins and outs of business administration ranging from marketing, to finance, and accounting. It lead me to work in finance for the next several years.`
+    } , {
+        title: 'High School Diploma',
+        institution: 'Escuela Naval "Arturo Prat"',
+        years: '1991-1992',
+        description: `I attended the Chilean officers naval academy for two years. These were the most important two years in my formation as a person. XXXXXX`
     }
 ]
 
@@ -23,7 +28,7 @@ function getEducationItem(name) {
     if (name === 'all items') {
         return educationItems.map(item => item.title);
     }
-    return educationItems.find((item) => item.title === name);
+    return educationItems;
 }
 
 
