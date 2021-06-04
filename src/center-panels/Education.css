@@ -1,6 +1,6 @@
 .education-container {
     padding: 10px;
-    height: 96vh;
+    height: calc(100vh - 20px);
     text-align: center;
     overflow-y: auto;
 }

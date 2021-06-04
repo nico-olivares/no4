@@ -1,12 +1,15 @@
 .experience-container {
     padding: 10px;
-    height: 96vh;
+    height: calc(100vh - 20px);
     text-align: center;
     overflow-y: auto;
 }
 
+
+
 .exp-card-container {
     display: flex;
+    height: calc(98vh - 70px);
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;

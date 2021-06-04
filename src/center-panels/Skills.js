@@ -15,7 +15,7 @@ export default function Skills({item, panelIsVisible}) {
                 <div className='skills-container' >
                     <h2> Skills</h2>
                     <div className='skill-subcontainer' >
-                        <Container className='skill-cards-container' fluid color='red' >
+                        <Container className='skill-cards-container'  >
                             <p>Hello world</p>
                         </Container>
                     </div>
