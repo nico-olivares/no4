@@ -1,13 +1,14 @@
 import React from 'react';
 import './Skills.css';
 import getSkillsItem from '../data/skillsItems';
-// import ExperienceCard from './ExperienceCard';
+import SkillCard from './SkillCard';
 import { Transition, Container, Card, Label } from 'semantic-ui-react';
 
 //experince component.
-export default function Skills({item, panelIsVisible}) {
+export default function Skills({panelIsVisible}) {
 
-    console.log(item);
+    const skillsArray = getSkillsItem();
+    
 
     return (
         <div>
@@ -16,7 +17,9 @@ export default function Skills({item, panelIsVisible}) {
                     <h2> Skills</h2>
                     <div className='skill-subcontainer' >
                         <Container className='skill-cards-container'  >
-                            <p>Hello world</p>
+                            {skillsArray.map(item => {
+                                return <SkillCard item={item.skillGroups} title={item.title} />
+                            })}
                         </Container>
                     </div>
                     

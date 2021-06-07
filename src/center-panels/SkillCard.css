@@ -1,0 +1,17 @@
+.single-skill-group {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(78, 76, 76, 0.322);
+}
+
+.single-skill-card {
+    padding: 10px;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+}
+
+.single-skill-card > div > .skill-label {
+    margin: 5px;
+}

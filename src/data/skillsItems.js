@@ -3,7 +3,7 @@
 const skillsItems = [
     {
         title: 'Hard Skills', 
-        skills: [
+        skillGroups: [
             {
                 title: 'Programming - Proficiency: Extensive', 
                 skills: [
@@ -17,9 +17,9 @@ const skillsItems = [
                 skills: ['Word', 'PowerPoint', 'Excel', 'Adobe Creative Cloud', 'mac ecosystem']
             }
         ]
-            }, {
+    }, {
                 title: 'Soft Skills',
-                skills: [
+                skillGroups: [
                     {
                         title: 'Soft Skills',
                         skills: [
@@ -27,15 +27,15 @@ const skillsItems = [
                         ]
                     }
                 ]
-            }
+    }
             
 ]
 
-function getSkillsItem(name) {
+function getSkillsItem(name = '') {
     if (name === 'all items') {
         return skillsItems.map(item => item.title);
     }
-    return skillsItems.find((item) => item.title === name);
+    return skillsItems;
 }
 
 
