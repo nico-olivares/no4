@@ -112,7 +112,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
 				/>
-        <MenuTitle
+        {/* <MenuTitle
 					key='9'
 					index='9'
 					title='Contact'
@@ -123,7 +123,7 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
-				/>
+				/> */}
 
 			</Accordion>
 		</div>
