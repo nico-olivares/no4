@@ -5,11 +5,19 @@ import { Transition } from 'semantic-ui-react';
 export default function Splash({ panelIsVisible }) {
 
     return (
-        <Transition visible={panelIsVisible} transition='fly left' duration={1500} >
-            <div className="splash">
-                <img className="splash-image" src='./media/20080403_IMG_0307.JPG' alt='Siete Tazas in Chile' />
-                <img className="splash-image" src='./media/20080404_IMG_0345.JPG' alt='Siete Tazas in Chile 2' />
-            </div>
-        </Transition >
+
+            
+                <div>
+                    <Transition visible={panelIsVisible} animation='fly left' duration={1500} >
+                        <div>
+                            <div className="splash">
+                                <img className="splash-image" src='./media/20080403_IMG_0307.JPG' alt='Siete Tazas in Chile' />
+                                <img className="splash-image" src='./media/20080404_IMG_0345.JPG' alt='Siete Tazas in Chile 2' />
+                            </div>
+                        </div>
+                    </Transition >
+                </div>
+           
+        
     )
 }

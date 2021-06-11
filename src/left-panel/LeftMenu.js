@@ -9,8 +9,8 @@ import getLifeItem from '../data/lifeItems';
 import getSkillsItem from '../data/skillsItems';
 
 //implements the left menu. The menu is a list of all the possible options
-export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible }) {
-	const [ activeIndex, setActiveIndex ] = useState('1');
+export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible, activeIndex, setActiveIndex }) {
+	
 	
 
 	return (

@@ -26,6 +26,7 @@ function App() {
 					setExpandedMenu={setExpandedMenu}
 					setCenterPanelName={setCenterPanelName}
 					setRightPanelName={setRightPanelName}
+					centerPanelName={centerPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
 				/>

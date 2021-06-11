@@ -1,15 +1,21 @@
+
+
+
 .splash {
     width: 100%;
-    height: 100%;
+    height: 90vh;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
+   
+    margin-top: 40px;
 }
 
 .splash-image {
-    width: 79%;
+    width: 75%;
     margin: 20px;
     border-radius: 10px;
 }

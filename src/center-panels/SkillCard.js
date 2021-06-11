@@ -19,8 +19,8 @@ export default function SkillCard({item, title}) {
                             <Container fluid>
                                 {skillSet.skills.map((singleSkill) => {
                                     return (
-                                    <Label className="skill-label" color={index === 0 ? 'olive' : index === 1 ? 'yellow' : 'orange'} size='large' >
-                                        <Label.Detail>{singleSkill}</Label.Detail>
+                                    <Label className="skill-label" color={index === 0 ? 'olive' : index === 1 ? 'yellow' : 'orange'} size='big' >
+                                        {singleSkill}
                                     </Label>)
                                 })}
                             </Container>
