@@ -1,10 +1,15 @@
 import './Portfolio.css'
-import { Grid, Embed, Modal, Button, Image, Header, Transition } from 'semantic-ui-react';
+import { Grid, Embed, Modal, Button, Image, Header, Transition, Dimmer, Loader } from 'semantic-ui-react';
 import { useState } from 'react'
 
 //portfolio component. This component gets reused for each different portfolio item
 export default function Portfolio({item, panelIsVisible }) {
     const [ open, setOpen ] = useState(false);
+    const [ loading, setLoading ] = useState(false);
+
+
+    
+
 
 return (
     <div className="portfolio-container">
@@ -25,12 +30,18 @@ return (
                             >
                             <Modal.Header>{item.title}</Modal.Header>
                             <Modal.Content >
-                                <Embed
-                                    icon='right circle arrow'
-                                    placeholder={item.image}
-                                    url={item.deployment}
-                                    active='true'
-                                />
+                                    
+                                        <Embed
+                                            icon='right circle arrow'
+                                            placeholder={item.image}
+                                            // url={item.deployment}
+                                            active='true'
+                                             >
+                                                <iframe id='website-frame' title='website' src={item.deployment} script={
+                                                    console.log('now')
+                                                } />
+                                                
+                                        </Embed>
                             </Modal.Content>
                             
                         </Modal>

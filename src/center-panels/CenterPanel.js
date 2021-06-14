@@ -1,5 +1,6 @@
 import {Transition} from 'semantic-ui-react'
 import Welcome from "./Welcome";
+import About from "./About";
 import Splash from "./Splash";
 import Portfolio from "./Portfolio";
 import Experience from "./Experience";
@@ -26,6 +27,9 @@ export default function CenterPanel({ panelName, panelIsVisible }) {
           
         case 'Welcome':
             return <Welcome panelIsVisible={panelIsVisible} />;
+
+        case 'About':
+            return <About panelIsVisible={panelIsVisible} />;
         
         case 'Portfolio':
             return <Portfolio key='1' item={getPortfolioItem(panelName.subtitle)} panelIsVisible={panelIsVisible} />;

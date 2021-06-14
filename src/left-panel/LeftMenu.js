@@ -31,8 +31,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 				<MenuTitle
 					key='2'
 					index='2'
-					title='Portfolio'
-					children={getPortfolioItem('all items')}
+					title='About'
+					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
@@ -43,6 +43,18 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 				<MenuTitle
 					key='3'
 					index='3'
+					title='Portfolio'
+					children={getPortfolioItem('all items')}
+					activeIndex={activeIndex}
+					setActiveIndex={setActiveIndex}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
+				/>
+				<MenuTitle
+					key='4'
+					index='4'
 					title='Experience'
 					children={getExperienceItem('all items')}
 					activeIndex={activeIndex}
@@ -53,21 +65,9 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setPanelIsVisible={setPanelIsVisible}
 				/>
         <MenuTitle
-					key='4'
-					index='4'
-					title='Education'
-					children={[]}
-					activeIndex={activeIndex}
-					setActiveIndex={setActiveIndex}
-					setCenterPanelName={setCenterPanelName}
-					setRightPanelName={setRightPanelName}
-					rightPanelName={rightPanelName}
-					setPanelIsVisible={setPanelIsVisible}
-				/>
-        <MenuTitle
 					key='5'
 					index='5'
-					title='Skills'
+					title='Education'
 					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
@@ -79,8 +79,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
         <MenuTitle
 					key='6'
 					index='6'
-					title='Life'
-					children={getLifeItem('all items')}
+					title='Skills'
+					children={[]}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
@@ -91,8 +91,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
         <MenuTitle
 					key='7'
 					index='7'
-					title='References'
-					children={[]}
+					title='Life'
+					children={getLifeItem('all items')}
 					activeIndex={activeIndex}
 					setActiveIndex={setActiveIndex}
 					setCenterPanelName={setCenterPanelName}
@@ -103,6 +103,18 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
         <MenuTitle
 					key='8'
 					index='8'
+					title='References'
+					children={[]}
+					activeIndex={activeIndex}
+					setActiveIndex={setActiveIndex}
+					setCenterPanelName={setCenterPanelName}
+					setRightPanelName={setRightPanelName}
+					rightPanelName={rightPanelName}
+					setPanelIsVisible={setPanelIsVisible}
+				/>
+        <MenuTitle
+					key='9'
+					index='9'
 					title='Resume'
 					children={[]}
 					activeIndex={activeIndex}
