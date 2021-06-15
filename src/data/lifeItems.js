@@ -9,7 +9,7 @@ const lifeItems = [
         images: ['./media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG' ]
     }, {
         title: 'Family', 
-        description: `I have been married to my wife Lee for sixteen years. We have two wonderful children. Matias who is now 13 and Lucia who is 9. My family is of course a great part of my life. We are a simple family and my wife and I agree on the pursuit of happiness through a simple and honest life rather than through material conquest.`,
+        description: `I have been married to my wife Lee since 2003. We have two wonderful children. Matias who is now 15 and Lucia who is 10. My family is of course a great part of my life. We are a grounded family and my wife and I agree on the pursuit of happiness through a simple and honest life rather than through material conquest.`,
         images: ['./media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG' ]
     }, {
         title: 'Interests', 

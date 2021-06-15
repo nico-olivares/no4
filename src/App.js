@@ -10,8 +10,12 @@ function App() {
 	const [ centerPanelName, setCenterPanelName ] = useState({title: 'splash', subtitle: ''});
 	const [ rightPanelName, setRightPanelName ] = useState({title: 'Welcome', subtitle: ''});
 	const [ panelIsVisible, setPanelIsVisible ] = useState(true);
+	const preload = ['https://panprep2.herokuapp.com/', 'https://web-key.herokuapp.com'];
 
-
+useEffect(() => {
+	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('done with fetch 1'));
+	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('done with fetch 2'));
+}, []);
   
 
 	return (
@@ -51,6 +55,11 @@ function App() {
 					<CenterPanel key='2' panelName={rightPanelName} panelIsVisible={panelIsVisible} />
 				
 			</div>
+			{/* <div style={{display: 'none'}} >
+				<iframe title='website1' src={preload[0]} />
+				<iframe title='website2' src={preload[1]} />
+				
+			</div> */}
 		</div>
 	);
 }

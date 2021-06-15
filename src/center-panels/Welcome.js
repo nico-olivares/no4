@@ -14,11 +14,8 @@ function Welcome({ panelIsVisible }) {
                             <img className='portrait' src='./media/portrait0-large.jpg' alt='Nicolas Olivares' />
                             <p>Nicolas Olivares</p>
                         </div>
-                        <p>Welcome to my interactive Résumé.</p>
-                        <p>Look around and get to know me.</p>
-                        <p>I'm a software developer and teacher.</p>
-                        <p>This website was developed using React.</p>
-                        <p>Enjoy your visit.</p>
+                        <p>Welcome to my interactive Resume.<br />I am a full stack web developer.<br />I consider myself a polymath whose passion is learning and doing.<br />I love learning and doing new things and mastering old ones. From learning to code and coding languages to fixing an appliance.<br />I am an idealist who values honor above all else. I believe in honesty, effort, and doing the right thing no matter what. I finally want to leave the world a better place than I found it and I like to work on things that have a positive impact even if it's only for a few people.</p>
+                        
                     </div>
                 </Transition >
             </div>

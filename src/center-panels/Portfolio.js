@@ -37,9 +37,8 @@ return (
                                             // url={item.deployment}
                                             active='true'
                                              >
-                                                <iframe id='website-frame' title='website' src={item.deployment} script={
-                                                    console.log('now')
-                                                } />
+                                                <iframe id='website-frame' title='website' src={item.deployment} 
+                                                 />
                                                 
                                         </Embed>
                             </Modal.Content>
