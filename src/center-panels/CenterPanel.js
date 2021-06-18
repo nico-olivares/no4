@@ -19,7 +19,7 @@ import getLifeItem from "../data/lifeItems"
 
 
 //controls what is shown in either center panel. It takes input from the menu and shows accordingly.
-export default function CenterPanel({ panelName, panelIsVisible }) {
+export default function CenterPanel({ panelName, panelIsVisible, referenceArray }) {
 
   switch (panelName.title) {
       case 'splash':
@@ -43,7 +43,7 @@ export default function CenterPanel({ panelName, panelIsVisible }) {
         case 'Life':
             return <Life key='1' item={getLifeItem(panelName.subtitle)} panelIsVisible={panelIsVisible} />;
         case 'References':
-            return <References panelIsVisible={panelIsVisible} />;
+            return <References panelIsVisible={panelIsVisible} referenceArray={referenceArray} />;
         case 'Resume':
             return <Resume panelIsVisible={panelIsVisible} />;
         case 'Contact':
