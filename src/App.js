@@ -1,8 +1,9 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { Transition } from 'semantic-ui-react';
+import { Transition, Card } from 'semantic-ui-react';
 import LeftPanel from './left-panel/LeftPanel';
 import CenterPanel from './center-panels/CenterPanel';
+import getReferences from './data/references';
 
 function App() {
 
@@ -11,10 +12,28 @@ function App() {
 	const [ rightPanelName, setRightPanelName ] = useState({title: 'Welcome', subtitle: ''});
 	const [ panelIsVisible, setPanelIsVisible ] = useState(true);
 	const preload = ['https://panprep2.herokuapp.com/', 'https://web-key.herokuapp.com'];
+	const [ referenceArray, setReferenceArray ] = useState(getReferences().map((item, index) => {
+		return (
+			<Card key={index} >
+				<Card.Content header={item.from} />
+				<Card.Content description={item.reference} />
+			</Card>
+		)
+	}));
 
 useEffect(() => {
 	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('done with fetch 1'));
-	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('`done with fetch 2'));
+	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('done with fetch 2'));
+	const refArray = [];
+	// getReferences().forEach((item, index) => {
+	// 	referenceArray.push((
+	// 		<Card index={index} >
+	// 			<Card.Content header={item.from} />
+	// 			<Card.Content description={item.reference} />
+	// 		</Card>
+	// 	))
+	// })
+	// setReferenceArray(JSON.parse(JSON.stringify(refArray)));
 }, []);
   
 
@@ -43,7 +62,7 @@ useEffect(() => {
 				}
 			>
 				
-					<CenterPanel key='1' panelName={centerPanelName} panelIsVisible={panelIsVisible} />
+					<CenterPanel key='1' panelName={centerPanelName} panelIsVisible={panelIsVisible} referenceArray={referenceArray} />
 				
 			</div>
 			<div
@@ -52,14 +71,10 @@ useEffect(() => {
 				}
 			>
 				
-					<CenterPanel key='2' panelName={rightPanelName} panelIsVisible={panelIsVisible} />
+					<CenterPanel key='2' panelName={rightPanelName} panelIsVisible={panelIsVisible} referenceArray={referenceArray} />
 				
 			</div>
-			{/* <div style={{display: 'none'}} >
-				<iframe title='website1' src={preload[0]} />
-				<iframe title='website2' src={preload[1]} />
-				
-			</div> */}
+			
 		</div>
 	);
 }
