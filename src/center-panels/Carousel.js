@@ -16,18 +16,33 @@ export default function Carousel({ componentArray, horizontal = true, duration =
 
     const [ activeIndex, setActiveIndex ] = useState(0);
 let timer = null;
-let two = 0;
-let three = 0;
-if (numberShowing > 1) two = 1;
-if (numberShowing > 2) three = 2;
+let activeIndexPlusOne = null;
+let activeIndexPlusTwo = null;
+let counterflow = false;
+
+ 
+
+
+if (numberShowing > 1) {
+    activeIndexPlusOne = activeIndex + 1;
+    if (activeIndexPlusOne >= componentArray.length) activeIndexPlusOne = 0;
+}
+if (numberShowing > 2) {
+    activeIndexPlusTwo = activeIndex + 2;
+    if (activeIndexPlusTwo === componentArray.length) activeIndexPlusTwo = 0;
+    if (activeIndexPlusTwo > componentArray.length) activeIndexPlusTwo = 1;
+}
 
 const myUseEffectTimeout = () => {
     timer = setTimeout(() => {
         if (activeIndex === componentArray.length -1) {
             setActiveIndex(0);
+            
         } else {
             setActiveIndex(activeIndex + 1);
+            
         }
+        counterflow = false;
     }, duration);
 }
 
@@ -44,12 +59,17 @@ useEffect(() => {
                 } else {
                     setActiveIndex(activeIndex - 1);
                 }
+                counterflow = true;
                 clearTimeout(timer);
             }} />
                 
             {componentArray.map((item, index) => {
                 return (
-                    <Transition key={index} visible={index === activeIndex || index === activeIndex + two || index === activeIndex + three ? true : false } animation={horizontal ? (index === activeIndex ? 'fade left' : 'fade right') : (index === activeIndex ? 'fade up' : 'fade down') } duration={animationSpeed} >
+                    <Transition key={index} 
+                    visible={index === activeIndex || index === activeIndexPlusOne || index === activeIndexPlusTwo ? true : false } 
+                    // animation={horizontal ? (!counterflow ? 'fade left' : 'fade right') : (!counterflow ? 'fade up' : 'fade down') }
+                    animation='fade left' 
+                    duration={animationSpeed} >
                         <div className='carousel-component-container' index={index} >
                             {item}
                         </div>
