@@ -11,12 +11,12 @@ export default function ExperienceCard({item}) {
         <Card>
             
             <Card.Content>
-            <Card.Header>{item.title}</Card.Header>
-            <Card.Meta>
+            <Card.Header className='card-title' >{item.title}</Card.Header>
+            <Card.Meta className='card-description' >
                 <span className='date'>{item.years}</span>
                 <span className='date'>{item.institution}</span>
             </Card.Meta>
-            <Card.Description>
+            <Card.Description className='card-description' >
                 {item.description}
             </Card.Description>
             </Card.Content>

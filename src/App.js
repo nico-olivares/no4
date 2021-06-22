@@ -12,11 +12,11 @@ function App() {
 	const [ rightPanelName, setRightPanelName ] = useState({title: 'Welcome', subtitle: ''});
 	const [ panelIsVisible, setPanelIsVisible ] = useState(true);
 	const preload = ['https://panprep2.herokuapp.com/', 'https://web-key.herokuapp.com'];
-	const [ referenceArray, setReferenceArray ] = useState(getReferences().map((item, index) => {
+	const [ referenceArray ] = useState(getReferences().map((item, index) => {
 		return (
 			<Card key={index} >
-				<Card.Content header={item.from} />
-				<Card.Content description={item.reference} />
+				<Card.Content className='card-title' header={item.from} />
+				<Card.Content className='card-description' description={item.reference} />
 			</Card>
 		)
 	}));
@@ -24,16 +24,7 @@ function App() {
 useEffect(() => {
 	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('done with fetch 1'));
 	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('done with fetch 2'));
-	const refArray = [];
-	// getReferences().forEach((item, index) => {
-	// 	referenceArray.push((
-	// 		<Card index={index} >
-	// 			<Card.Content header={item.from} />
-	// 			<Card.Content description={item.reference} />
-	// 		</Card>
-	// 	))
-	// })
-	// setReferenceArray(JSON.parse(JSON.stringify(refArray)));
+	
 }, []);
   
 

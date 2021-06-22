@@ -9,7 +9,7 @@ function Welcome({ panelIsVisible }) {
         
             <div className="welcome-container">
                 <Transition visible={panelIsVisible} animation='fly left' duration={1500}>
-                    <div>
+                    <div >
                         <div className='image-group' >
                             <img className='portrait' src='./media/portrait0-large.jpg' alt='Nicolas Olivares' />
                             <p>Nicolas Olivares</p>

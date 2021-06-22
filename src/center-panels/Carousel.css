@@ -1,7 +1,8 @@
 .carousel {
     
-    height: 100vh;
+    height: 98vh;
     padding: 20px;
+    overflow-y: auto;
 }
 
 .horizontal {
@@ -15,4 +16,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.carousel-component-container {
+    margin: 20px;
 }

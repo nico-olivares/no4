@@ -10,7 +10,7 @@ function About({ panelIsVisible }) {
             <div className="about-container">
                 <Transition visible={panelIsVisible} animation='fly left' duration={1500}>
                     <div>
-                        <p>This webpage was designed and implemented entirely by Nicolas Olivares using React and the Semantic UI framework.<br /> To implement React I also used JavaScript, HTML, and CSS.<br /> Please explore and enjoy.<br /> Thanks for visiting.</p>
+                        <p>This webpage was designed and implemented entirely by Nicolas Olivares using React and the Semantic UI framework.<br /> To implement React JavaScript, HTML, and CSS were also utilized.<br /> Please explore and enjoy.<br /> Thanks for visiting.</p>
                     </div>
                 </Transition >
             </div>

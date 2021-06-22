@@ -11,12 +11,12 @@ export default function EducationCard({item}) {
         <Card>
             
             <Card.Content>
-            <Card.Header>{item.title}</Card.Header>
-            <Card.Meta>
+            <Card.Header className='card-title' >{item.title}</Card.Header>
+            <Card.Meta className='card-description' >
                 <p className='date'>{item.institution}</p>
                 <p className='date'>{item.years}</p>  
             </Card.Meta>
-            <Card.Description>
+            <Card.Description className='card-description' >
                 {item.description}
             </Card.Description>
             </Card.Content>
