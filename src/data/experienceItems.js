@@ -8,7 +8,12 @@ const experienceItems = [
                 title: 'JavaScript Full Stack',
                 years: '2020 to present',
                 institution: 'Fullstack Academy student and self',
-                description: `From April to October of 2020 I attended a Fullstack bootcamp by UNF - Fullstack Academy. There I learned the JavaScript full stack including HTML, CSS, JavaScript, Express, PostgreSQL, React, node, git, github, and more. The camp was project driven. Each week (sometimes longer periods) we would code a project. The last two projects were group efforts and involved git control and team work. I got to be the leader of the second group for the Capstone project, the largest project of the camp. After the camp was over I have kept coding and learning in order to keep my skills sharp and improve as much as I can.`
+                description: `From April to October of 2020, I attended a Fullstack bootcamp by UNF - Fullstack Academy. 
+                There I learned the JavaScript full stack including HTML, CSS, JavaScript, Express, PostgreSQL, React, node, git, github, and more. 
+                The camp was project driven. Each week (sometimes longer periods) we would code a project. 
+                The last two projects were group efforts and involved git control and teamwork. 
+                For the final group project, my peers asked me to be project leader. Our Capstone project was the largest project of the camp. 
+                After the camp was over, I have continued to code and learn in order to keep my skills sharp and improve as much as possible.`
             },
             {
                 title: 'Java',
@@ -53,7 +58,7 @@ const experienceItems = [
                 title: 'Junior Financial Risk Assessment',
                 years: '1997-2000',
                 institution: 'BBVA Chile',
-                description: `XXX`
+                description: `As a junior financial risk analyst I was in charge of approving loans for small to medium size companies. Towards the end of this job I had autonomy to approve up to about $600,000 by myself. I could analyze higher amounts, but those were approved by a committee.`
             }
         ]
     }, {
