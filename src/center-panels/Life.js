@@ -17,7 +17,7 @@ export default function Life({item, panelIsVisible}) {
                         </Container>
                     </div>
                     <div className='life-carousel' >
-                        Carousel maybe
+                        Carousel with photos to come...
                     </div>
                     
                 </div>

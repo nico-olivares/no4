@@ -20,7 +20,7 @@ const educationItems = [
         title: 'High School Diploma',
         institution: 'Escuela Naval "Arturo Prat"',
         years: '1991-1992',
-        description: `I attended the Chilean officers naval academy for two years. These were the most important two years in my formation as a person. XXXXXX`
+        description: `I attended the Chilean officers naval academy for two years. These were the most important two years in my formation as a person. At the navy I learned discipline of course, self discipline, honor, to give my all to the tasks I set out to complete, and more. Who I am today is greatly impacted by those two years.`
     }
 ]
 

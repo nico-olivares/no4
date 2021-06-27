@@ -11,7 +11,8 @@
 
 
 
-p {
+.about-container p {
     font-size: 25px;
     text-align: center;
+    line-height: 50px;
 }

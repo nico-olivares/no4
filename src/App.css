@@ -54,6 +54,13 @@
   .right-panel-closed {
     width: calc(100vw - 20px);
   }
+
+  .card-title {
+    font-size: 18px !important;
+  }
+  .card-description {
+    font-size: 16px !important;
+  }
 }
 
 
@@ -70,4 +77,10 @@
     width: calc(50vw - 10px);
   }
   
+  .card-title {
+    font-size: 20px !important;
+  }
+  .card-description {
+    font-size: 18px !important;
+  }
 }
