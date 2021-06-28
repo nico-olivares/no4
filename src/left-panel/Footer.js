@@ -6,13 +6,13 @@ import { Icon } from 'semantic-ui-react'
 export default function Footer() {
   return (
     <div className="footer-inner">
-        <a href='https://github.com/nico-olivares' target='_blank'>
+        <a href='https://github.com/nico-olivares' target='_blank' rel='noreferrer' >
           <Icon name="github" size='big' color='black' />
         </a>
         <a href='mailto:nolivaresr@hotmail.com'>
           <Icon name='envelope' size='big' color='black' />
         </a>
-        <a href='https://www.linkedin.com/in/nicolas-olivares-developer/' target="_blank">
+        <a href='https://www.linkedin.com/in/nicolas-olivares-developer/' target="_blank" rel='noreferrer' >
           <Icon name='linkedin' size='big' color='blue' />
         </a>
     </div>

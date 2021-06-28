@@ -1,11 +1,11 @@
 import './Portfolio.css'
-import { Grid, Embed, Modal, Button, Image, Header, Transition, Dimmer, Loader } from 'semantic-ui-react';
+import { Grid, Embed, Modal, Image, Transition } from 'semantic-ui-react';
 import { useState } from 'react'
 
 //portfolio component. This component gets reused for each different portfolio item
 export default function Portfolio({item, panelIsVisible }) {
     const [ open, setOpen ] = useState(false);
-    const [ loading, setLoading ] = useState(false);
+    // const [ loading, setLoading ] = useState(false);
 
 
     
@@ -55,12 +55,12 @@ return (
                 </Grid.Row>
                 <Grid.Row>
                         <Grid.Column>
-                            <p>Github: <a href={item.github} target="_blank" >{item.github}</a></p>
+                            <p>Github: <a href={item.github} rel='noreferrer' target="_blank" >{item.github}</a></p>
                         </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
                         <Grid.Column>
-                            <p>Deployment: <a href={item.deployment} target="_blank" >{item.deployment}</a></p>
+                            <p>Deployment: <a href={item.deployment} rel='noreferrer' target="_blank" >{item.deployment}</a></p>
                         </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>

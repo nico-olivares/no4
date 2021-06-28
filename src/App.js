@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { Transition, Card } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 import LeftPanel from './left-panel/LeftPanel';
 import CenterPanel from './center-panels/CenterPanel';
 import getReferences from './data/references';
@@ -25,7 +25,7 @@ useEffect(() => {
 	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('done with fetch 1'));
 	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('done with fetch 2'));
 	
-}, []);
+});
   
 
 	return (

@@ -2,7 +2,7 @@ import React from 'react';
 import './Skills.css';
 import getSkillsItem from '../data/skillsItems';
 import SkillCard from './SkillCard';
-import { Transition, Container, Card, Label } from 'semantic-ui-react';
+import { Transition, Container } from 'semantic-ui-react';
 
 //experince component.
 export default function Skills({panelIsVisible}) {

@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './References.css';
 import { Transition } from 'semantic-ui-react';
 import Carousel from './Carousel.js';
-import getReferences from '../data/references';
+
 
 export default function References({ panelIsVisible, referenceArray }) {
 

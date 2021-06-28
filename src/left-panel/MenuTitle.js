@@ -1,6 +1,6 @@
 // import './MenuTitle.css';
 import { useState } from 'react';
-import { Accordion, Icon, Menu, Input, Label } from 'semantic-ui-react';
+import { Accordion, Icon, Menu } from 'semantic-ui-react';
 import MenuItem from './MenuItem';
 
 //implements the menu accordion with all the main titles. It also calls for the subtitles when needed and puts the whole menu together.

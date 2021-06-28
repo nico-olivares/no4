@@ -1,12 +1,12 @@
 import './LeftMenu.css';
-import { useState } from 'react';
+import React from 'react';
 import { Accordion } from 'semantic-ui-react';
 import MenuTitle from './MenuTitle';
 import getPortfolioItem from '../data/portfolioItems';
 import getExperienceItem from '../data/experienceItems';
-import getEducationItem from '../data/educationItems';
+
 import getLifeItem from '../data/lifeItems';
-import getSkillsItem from '../data/skillsItems';
+
 
 //implements the left menu. The menu is a list of all the possible options
 export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible, activeIndex, setActiveIndex }) {

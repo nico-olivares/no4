@@ -1,4 +1,4 @@
-import {Transition} from 'semantic-ui-react'
+
 import Welcome from "./Welcome";
 import About from "./About";
 import Splash from "./Splash";

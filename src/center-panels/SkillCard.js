@@ -1,6 +1,6 @@
 import React from 'react';
 import './SkillCard.css';
-import { Container, Card, Label } from 'semantic-ui-react';
+import { Container, Label } from 'semantic-ui-react';
 
 //experince component.
 export default function SkillCard({item, title}) {

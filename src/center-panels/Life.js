@@ -1,7 +1,7 @@
 import React from 'react';
 import './Life.css';
 import { Transition, Container } from 'semantic-ui-react';
-import Carousel from './Carousel'
+// import Carousel from './Carousel'
 
 //personal life component
 export default function Life({item, panelIsVisible}) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Experience.css';
-import getExperienceItem from '../data/experienceItems';
+
 import ExperienceCard from './ExperienceCard';
 import { Transition } from 'semantic-ui-react';
 
