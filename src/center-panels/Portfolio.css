@@ -6,6 +6,15 @@
     
 }
 
+.portfolio-button {
+    width: 100%;
+
+}
+
+.portfolio-button:hover {
+    cursor: pointer;
+}
+
 .image-column {
     display: flex;
     justify-content: center;

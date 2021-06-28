@@ -26,7 +26,7 @@ return (
                             onClose={() => setOpen(false)}
                             onOpen={() => setOpen(true)}
                             open={open}
-                            trigger={<a href='#' ><Image src={`./media/apps/${item.image}`} fluid /></a>}
+                            trigger={<button className='portfolio-button' href='#' ><Image src={`./media/apps/${item.image}`} fluid /></button>}
                             >
                             <Modal.Header>{item.title}</Modal.Header>
                             <Modal.Content >
