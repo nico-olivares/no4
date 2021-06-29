@@ -50,6 +50,7 @@ export default function Carousel({ componentArray, horizontal = true, duration =
     }
 
     //This useEffect resets the timer each time in case the user clicks to move carousel forward or back so there's not two parallel timers.
+    /* eslint-disable no-debugger, no-console */
     useEffect(() => {
         clearTimeout(timer);
         myUseEffectTimeout();
