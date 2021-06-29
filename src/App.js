@@ -1,4 +1,5 @@
 import './App.css';
+import './global.css';
 import { useState, useEffect } from 'react';
 import { Card } from 'semantic-ui-react';
 import LeftPanel from './left-panel/LeftPanel';

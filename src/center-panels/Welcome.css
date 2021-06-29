@@ -3,7 +3,7 @@
     height: 98vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
     padding: 60px;
@@ -18,6 +18,8 @@
     margin-top: 10px;
     margin-bottom: 60px;
 }
+
+
 
 .portrait {
     width: 250px;
