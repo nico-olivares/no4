@@ -27,7 +27,7 @@ const lifeItems = [
         of jumping higher than humanly possible. It's a great feeling, but hard to explain. It's a bit like trying to explain apple pie 
         to someone that has never had one. I have been practicing one form or another of martial arts for most of my life. For the last seven 
         years I've been practicing Shorin-Ryu Karate-Do at the Chintokan Dojo in Jacksonville. The clip is from my beginnings. I hold now a brown belt. 
-        Karate is both physically and mentally demanding which is what appeals to me.`,
+        Karate is both physically and intellectually demanding which is what appeals to me.`,
         images: ['./media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG' ]
     }
 ]

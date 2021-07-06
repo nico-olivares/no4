@@ -6,7 +6,6 @@ This is Nicolas Olivares' personal website.
  - Welcome image gets cut off when not enough space.
  - Menu needs to retreat on click. Be smaller for phone.
  - Optimize for phone and tablet.
- - Splash images take too long to load. Show loader.
 
 # About
 This is my personal website / interactive resume / portfolio.
