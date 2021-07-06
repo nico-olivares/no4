@@ -17,9 +17,38 @@ import getSkillsItem from "../data/skillsItems";
 import getEducationItem from "../data/educationItems";
 import getLifeItem from "../data/lifeItems"
 
+import { getFamilyPhotos, getBiographyPhotos, getHobbiesPhotos } from '../data/photos';
+
 
 //controls what is shown in either center panel. It takes input from the menu and shows accordingly.
 export default function CenterPanel({ panelName, panelIsVisible, referenceArray }) {
+
+    let duration = 4000;
+
+    const photoArray = (kind) => {
+        let array = null;
+        switch (kind) {
+            case 'Biography':
+                array = getBiographyPhotos();
+                duration = 4000;
+                break;
+            case 'Family':
+                array = getFamilyPhotos();
+                duration = 4000;
+                break;
+            case 'Interests':
+                array = getHobbiesPhotos();
+                duration = 6000;
+                break;
+            default:
+                array = null;
+                break;
+        }
+        return array.map(item => {
+            return <img className='life-photos' src={item.address} alt={item.alt} />
+        });
+    }
+
 
   switch (panelName.title) {
       case 'splash':
@@ -41,7 +70,7 @@ export default function CenterPanel({ panelName, panelIsVisible, referenceArray 
         case 'Skills':
             return <Skills key='1' item={getSkillsItem(panelName.subtitle)} panelIsVisible={panelIsVisible} />;
         case 'Life':
-            return <Life key='1' item={getLifeItem(panelName.subtitle)} panelIsVisible={panelIsVisible} />;
+            return <Life key='1' item={getLifeItem(panelName.subtitle)} photosArray={photoArray(panelName.subtitle)} panelIsVisible={panelIsVisible} duration={duration} />;
         case 'References':
             return <References panelIsVisible={panelIsVisible} referenceArray={referenceArray} />;
         case 'Resume':

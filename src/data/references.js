@@ -32,11 +32,11 @@ const referencesItems = [
         I feel Nick is well deserving of this recognition!`
     },   {
         from: 'anonymous - Teacher of the year nomination', 
-        reference: `- Contributes to students improvement
-        - Great expertise in subject (science) area
-        - Actively engaged to help students to set up computers + TEAMs in the 4th Q 2019/20
-        - Communication with everyone is exceptional!!!
-        - Commited to work hard.
+        reference: `-Contributes to students improvement 
+        -Great expertise in subject (science) area 
+        -Actively engaged to help students to set up computers + TEAMs in the 4th Q 2019/20 
+        -Communication with everyone is exceptional!!! 
+        -Commited to work hard.
         `
     }  , {
         from: 'anonymous - Teacher of the year nomination', 

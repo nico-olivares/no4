@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'semantic-ui-react';
-// import './ExperienceCard.css';
+import './EducationCard.css';
 
 
 //experince component.

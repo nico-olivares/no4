@@ -1,6 +1,8 @@
 .life-container {
     padding: 10px;
+    height: 98vh;
     text-align: center;
+    overflow-y: auto;
 }
 
 .life-container > h2 {
@@ -11,7 +13,7 @@
 .life-subcontainer {
     display: flex;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: -100px;
     overflow-y: auto;
     justify-content: center;
     padding: 10px;
@@ -22,4 +24,9 @@
 
 .life-text-container {
     padding: 20px;
+    text-align: justify;
+}
+
+.life-photos {
+    width: 25vw;
 }

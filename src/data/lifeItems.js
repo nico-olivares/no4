@@ -3,17 +3,31 @@
 const lifeItems = [
     {
         title: 'Biography', 
-        description: `My name is Nicolas Olivares. I was born and raised in Chile where among many other things I attended the Chilean Officer's Naval Academy, I completed an MBA program, and then worked in finance for a few years. In mid 2001 I met my wife-to-be, although at the time we were just friends. We met online in a chat room. 
-        She wanted to practice her Spanish and we started talking. After a few conversations and emails not much came of it, except that after 9/11 I emailed her out of concern for her family and friends. She told me that all hers were fine and we connected again. By chance we found that both of us were traveling to Lima, Peru on the same day. 
-        She was going on a two week vacation, while I was attended a wedding and was going to be there for a long weekend. I invited her to attend the wedding with me and the rest is history. A few months later I moved to the U.S. permanently and `,
+        description: `My name is Nicolas Olivares. I was born and raised in Chile where among many other things I attended the Chilean Officer's Naval Academy, 
+        I completed an MBA program, and then worked in finance for a few years. In mid 2001 I met my wife-to-be, although at the time we were just friends. 
+        We met online in a chat room. She wanted to practice her Spanish and we started talking. After a few conversations and emails not much came of it, 
+        except that after 9/11 I emailed her out of concern for her family and friends. She told me that all hers were fine and we connected again. 
+        By chance we found that both of us were traveling to Lima, Peru on the same day. 
+        She was going on a two week vacation, while I was attended a wedding and was going to be there for a long weekend. 
+        I invited her to attend the wedding with me and the rest is history. A few months later I moved to the U.S. permanently. Less than two years later we were 
+        married, then a boy, a girl and by now we have been married for over 18 years. When I came to the U.S. I switched careers and became a teacher. I wanted to 
+        do something good for the world and teaching was one of my passions. I have been a teacher for as long as I've been married. While teaching I also 
+        taught myself coding for fun and made small apps for my classroom. Now I'm turning that passion into my career. `,
         images: ['./media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG' ]
     }, {
         title: 'Family', 
-        description: `I have been married to my wife Lee since 2003. We have two wonderful children. Matias who is now 15 and Lucia who is 10. My family is of course a great part of my life. We are a grounded family and my wife and I agree on the pursuit of happiness through a simple and honest life rather than through material conquest.`,
+        description: `I have been married to my wife Lee since 2003. We have two wonderful children. Matias who is now 15 and Lucia who is 10. 
+        My family is of course a great part of my life. We are a grounded family and my wife and I agree on the pursuit of happiness through a 
+        simple and honest life rather than through material conquest.`,
         images: ['./media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG' ]
     }, {
         title: 'Interests', 
-        description: `Other than my family and coding, my two great loves are Kitesurfing and Karate. Kitesurfing is my number one passion in life after my family. I'm not a great kitesurfer, but I'm okay and I love it. The feeling of speeding through the water, of jumping higher than humanly possible. It's a great feeling, but hard to explain. It's a bit like trying to explain apple pie to someone that has never had one. I have been practicing one form or another of martial arts for most of my life. For the last seven years I've been practicing Shorin-Ryu Karate-Do at the Chintokan Dojo in Jacksonville. The clip is from my beginnings. I hold now a brown belt. Karate is both physically and mentally demanding which is what appeals to me.`,
+        description: `Other than my family and coding, my two great loves are Kitesurfing and Karate. Kitesurfing is my number one passion 
+        in life after my family. I'm not a great kitesurfer, but I'm okay and I love it. The feeling of speeding through the water, 
+        of jumping higher than humanly possible. It's a great feeling, but hard to explain. It's a bit like trying to explain apple pie 
+        to someone that has never had one. I have been practicing one form or another of martial arts for most of my life. For the last seven 
+        years I've been practicing Shorin-Ryu Karate-Do at the Chintokan Dojo in Jacksonville. The clip is from my beginnings. I hold now a brown belt. 
+        Karate is both physically and mentally demanding which is what appeals to me.`,
         images: ['./media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG', './media/20080403_IMG_0307.JPG' ]
     }
 ]
