@@ -10,6 +10,7 @@ import Life from "./Life";
 import References from "./References";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import './CenterPanel.css';
 
 import getPortfolioItem from "../data/portfolioItems";
 import getExperienceItem from "../data/experienceItems";

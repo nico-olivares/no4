@@ -47,7 +47,7 @@ export default function MenuTitle({
 			</Accordion.Title>
 			{children.length > 0 ? (
 				<Accordion.Content active={activeIndex === index}>
-					<Menu vertical>
+					<Menu vertical fluid >
 						{children.map((item, i) => {
 							return (
 								<MenuItem

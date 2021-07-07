@@ -3,14 +3,14 @@
 const portfolioItems = [
     {
         title: 'Doomsday Preppers', 
-        description: `An eCommerce website tailored towards the ddoomsday prepper community. It has relevant doomsday news, and an array of preparation/readiness products.`, 
+        description: `This was my bootcamp Capstone project. An eCommerce website tailored towards the ddoomsday prepper community. It has relevant doomsday news, and an array of preparation/readiness products.`, 
         stack: ['React', 'Bootstrap', 'JavaScript', 'Express', 'node', 'PostgreSQL', 'webtoken', 'npm'], 
         github: 'https://github.com/nico-olivares/pandemicprep2', 
         deployment: 'https://panprep2.herokuapp.com/', 
         image: 'doomsday.png'
     }, {
         title: `webkey`,
-        description: `One key to rule them all. webkey is a master bookmark website where users can store their bookmarks and have them available anywhere independent of browser or computer.`,
+        description: `This was my bootcamp one to last project. One key to rule them all. webkey is a master bookmark website where users can store their bookmarks and have them available anywhere independent of browser or computer.`,
         stack: ['React', 'Bootstrap', 'JavaScript', 'HTML', 'CSS', 'Express', 'node', 'PostgreSQL', 'webtoken', 'npm'],
         github: `https://github.com/nico-olivares/webkey`,
         deployment: `https://web-key.herokuapp.com`,

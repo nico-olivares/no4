@@ -1,4 +1,4 @@
-// import './MenuItem.css';
+import './MenuItem.css';
 // import {useState} from 'react';
 import { Menu } from 'semantic-ui-react';
 
@@ -21,7 +21,7 @@ export default function MenuItem({ title, subtitle, activeMenu, setActiveMenu, s
 
 	return (
 		<Menu.Item
-			
+			className='menu-item-submenu'
 			name={subtitle}
 			active={title === activeMenu}
 			onClick={handleItemClick}

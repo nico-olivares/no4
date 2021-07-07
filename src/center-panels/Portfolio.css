@@ -19,3 +19,7 @@
     display: flex;
     justify-content: center;
 }
+
+.portfolio-description p {
+    text-align: justify;
+}

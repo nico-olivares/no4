@@ -13,7 +13,7 @@
 .life-subcontainer {
     display: flex;
     width: 100%;
-    margin-bottom: -100px;
+    margin-bottom: -65px;
     overflow-y: auto;
     justify-content: center;
     padding: 10px;
@@ -27,6 +27,3 @@
     text-align: justify;
 }
 
-.life-photos {
-    width: 25vw;
-}

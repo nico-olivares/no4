@@ -3,9 +3,13 @@ This is Nicolas Olivares' personal website.
 
 # To-do
  - Fix Carousel first and last elements animation.
- - Welcome image gets cut off when not enough space.
- - Menu needs to retreat on click. Be smaller for phone.
+ - Menu needs to retreat on click on phone. Be smaller for phone.
  - Optimize for phone and tablet.
+ - References have to be only 1 for laptop and smaller
+
+
+ - Life carousel has to be more than 14vh photo for iphone only. Done.
+ - Welcome image gets cut off when not enough space. Fixed, but needs more checking.
 
 # About
 This is my personal website / interactive resume / portfolio.

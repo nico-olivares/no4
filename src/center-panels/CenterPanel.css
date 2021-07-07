@@ -1,0 +1,23 @@
+.life-photos {
+    width: 25vw;
+}
+
+
+@media (max-width: 768) {
+    .life-photos {
+        width: 45vw;
+    }
+}
+
+
+@media (min-width: 769 and max-width: 1400) {
+    .life-photos {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1401) {
+    .life-photos {
+        width: 25px;
+    }
+}

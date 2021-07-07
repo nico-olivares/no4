@@ -80,10 +80,6 @@ const hobbiesPhotos = [
     {
         address: './media/personal/hobbies/Karate.gif',
         alt: 'First karate demo'
-    },
-    {
-        address: './media/personal/hobbies/BikeJumpV2.gif',
-        alt: 'Mountain biking at Graham Swamp Trail, Beverly Beach, Florida'
     }
     
 ];

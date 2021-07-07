@@ -1,6 +1,6 @@
 .left-panel-inner {
     display: flex;
-    
+
 }
 
 
@@ -17,7 +17,7 @@
 
 @media (max-width: 1400px) {
     .left-panel-content {
-      width: 180vw;
+      width: 115px;
     }
     
   }
@@ -30,4 +30,6 @@
       
   }
   
-  
+  .left-panel-inner-closed {
+    width: 20px;
+  }

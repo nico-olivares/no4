@@ -64,7 +64,7 @@ return (
                         </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
-                    <Grid.Column>
+                    <Grid.Column className='portfolio-description' >
                         <p>{item.description}</p>
                     </Grid.Column>
                 </Grid.Row>

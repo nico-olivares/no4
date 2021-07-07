@@ -41,14 +41,14 @@
 
 @media (max-width: 1400px) {
   .left-panel-open {
-    width: 200px;
+    width: 150px;
   }
   .center-panel {
     display: none;
   }
 
   .right-panel-open {
-    width: calc(100vw - 200px)
+    width: calc(100vw - 150px)
   }
 
   .right-panel-closed {
