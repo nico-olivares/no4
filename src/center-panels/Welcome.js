@@ -14,12 +14,13 @@ function Welcome({ panelIsVisible }) {
                             <img className='portrait' src='./media/portrait0-large.jpg' alt='Nicolas Olivares' />
                             <p>Nicolas Olivares</p>
                         </div>
-                        <p>Welcome to my interactive Resume.<br />I am a full stack web developer.<br />
-                        I consider myself a polymath whose passion is learning and doing.<br />
-                        I love learning, trying new things and mastering old ones whether learning to code and coding languages to fixing an appliance.<br />
-                        I am an idealist who values honor above all else. I believe in honesty, effort, and doing the right thing no matter what. 
-                        I want to leave the world a better place than I found it and be the positive 
-                        impact around me.</p>
+                        <p>Welcome to my interactive Résumé.<br /><br />
+                        I am a full stack web developer whose passion is learning and doing. 
+                        I am a polymath and love learning and mastering new skills and concepts whether learning to code, 
+                        coding languages, or even fixing the unruly appliance.  I am an idealist who values honor above all else. 
+                        I believe in honesty, effort, and doing the right thing no matter what. 
+                        I want to leave the world a better place and be the positive influence around me.
+</p>
                         
                     </div>
                 </Transition >
