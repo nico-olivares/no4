@@ -1,6 +1,6 @@
 .carousel {
     
-    height: 98vh;
+    height: 100%;
     padding: 20px;
     overflow-y: auto;
 }

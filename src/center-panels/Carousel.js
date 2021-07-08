@@ -11,7 +11,7 @@ import './Carousel.css'
  * @param {int} numberShowing the number of elements to be displayed at one time. Default is 1, but it could be 2 or 3 as well. Max 3.
  * @returns 
  */
-export default function Carousel({ componentArray, horizontal = true, duration = 3000, numberShowing = 1, animationSpeed = 600 }) {
+export default function Carousel({ componentArray, horizontal = true, duration = 3000, numberShowing = 1, animationSpeed = 300 }) {
 
     //keeps track of the component that should be showing. If there's more than one component showing, this will be the anchor component.
     const [ activeIndex, setActiveIndex ] = useState(0);
