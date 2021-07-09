@@ -7,7 +7,8 @@ const skillsItems = [
             {
                 title: 'Programming - Proficiency: Extensive', 
                 skills: [
-                    'React.js', 'JavaScript', 'HTML', 'CSS', 'Express', 'Node.js', 'PostgreSQL', 'JQuery', 'npm', 'git', 'github', 'Postman'
+                    'React.js', 'JavaScript', 'HTML', 'CSS', 'Express.js', 'Node.js', 'PostgreSQL', 
+                    'JQuery', 'npm', 'git', 'GitHub', 'Postman', 'Bootstrap', 'Semantic UI', 'JSON Web Tokens', 'bcrypt'
             ]
             }, {
                 title: 'Programming - Proficiency: Intermediate', 
