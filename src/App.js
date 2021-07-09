@@ -39,9 +39,9 @@ useEffect(() => {
 		setExpandedMenu(false);
 		setIsPhone(true);
 	}
-	preloadArrayOfPhotos(getSplashPhotos());
-	preloadArrayOfPhotos(getFamilyPhotos());
-	preloadArrayOfPhotos(getBiographyPhotos());
+	// preloadArrayOfPhotos(getSplashPhotos());
+	// preloadArrayOfPhotos(getFamilyPhotos());
+	// preloadArrayOfPhotos(getBiographyPhotos());
 	preloadArrayOfPhotos(getHobbiesPhotos());
 }, []);
   
