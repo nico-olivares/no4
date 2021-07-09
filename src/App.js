@@ -28,6 +28,7 @@ function App() {
 		array.map(item => {
 			const photo = new Image();
 			photo.src = item.address;
+			return photo;
 		})
 	}
 
