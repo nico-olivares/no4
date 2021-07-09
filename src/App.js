@@ -30,7 +30,6 @@ useEffect(() => {
 		setExpandedMenu(false);
 		setIsPhone(true);
 	}
-	console.log('first use effect');
 }, []);
   
 
