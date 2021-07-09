@@ -5,6 +5,7 @@ import { Card } from 'semantic-ui-react';
 import LeftPanel from './left-panel/LeftPanel';
 import CenterPanel from './center-panels/CenterPanel';
 import getReferences from './data/references';
+import {getSplashPhotos, getFamilyPhotos, getHobbiesPhotos, getBiographyPhotos} from './data/photos';
 
 function App() {
 
@@ -23,6 +24,13 @@ function App() {
 		)
 	}));
 
+	function preloadArrayOfPhotos(array) {
+		array.map(item => {
+			const photo = new Image();
+			photo.src = item.address;
+		})
+	}
+
 useEffect(() => {
 	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('done with fetch 1'));
 	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('done with fetch 2'));
@@ -30,6 +38,10 @@ useEffect(() => {
 		setExpandedMenu(false);
 		setIsPhone(true);
 	}
+	preloadArrayOfPhotos(getSplashPhotos());
+	preloadArrayOfPhotos(getFamilyPhotos());
+	preloadArrayOfPhotos(getBiographyPhotos());
+	preloadArrayOfPhotos(getHobbiesPhotos());
 }, []);
   
 
