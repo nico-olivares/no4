@@ -14,7 +14,7 @@ function Welcome({ panelIsVisible }) {
                             <img className='portrait' src='./media/portrait0-large.jpg' alt='Nicolas Olivares' />
                             <p>Nicolas Olivares</p>
                         </div>
-                        <p>Welcome to my interactive Résumé.<br /><br />
+                        <p className='large-text' >Welcome to my interactive Résumé.<br /><br />
                         I am a full stack web developer whose passion is learning and doing. 
                         I am a polymath and love learning and mastering new skills and concepts whether learning to code, 
                         coding languages, or even fixing an unruly appliance.  I am an idealist who values honor above all else. 

@@ -9,7 +9,7 @@ function About({ panelIsVisible }) {
         
             <div className="about-container">
                 <Transition visible={panelIsVisible} animation='fly left' duration={1500}>
-                    <div>
+                    <div className='large-text' >
                         <p>This webpage was designed and implemented by <strong>Nicolas Olivares</strong> using the following:</p> <br/>
                         
                         <ul>

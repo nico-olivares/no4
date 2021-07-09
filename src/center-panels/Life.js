@@ -15,7 +15,7 @@ export default function Life({item, photosArray, panelIsVisible, duration}) {
                 <div className='life-container' >
                     <h2>{item.title}</h2>
                     <div className='life-subcontainer' >
-                        <Container className='life-text-container'  >
+                        <Container className='life-text-container large-text'  >
                             {item.description}
                         </Container>
                     </div>

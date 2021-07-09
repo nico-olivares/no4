@@ -1,0 +1,43 @@
+@media (max-width: 450px) {
+    .large-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .note {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 850px) {
+    .large-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .note {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1500px) {
+    .large-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .note {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1501px) {
+    .large-text {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .note {
+        font-size: 18px;
+    }
+}

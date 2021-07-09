@@ -12,14 +12,10 @@
 
 
 .about-container p {
-    font-size: 25px;
     text-align: justify;
-    line-height: 50px;
 }
 
-.about-container .note {
-    font-size: 18px;
-}
+
 
 .note strong {
     font-style: italic;

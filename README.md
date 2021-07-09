@@ -3,7 +3,7 @@ This is Nicolas Olivares' personal website.
 
 # To-do
  - Fix Carousel first and last elements animation.
- - Optimize for phone and tablet.
+
 
 
 # About
