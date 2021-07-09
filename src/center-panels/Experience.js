@@ -7,7 +7,6 @@ import { Transition } from 'semantic-ui-react';
 //experince component.
 export default function Experience({item, panelIsVisible}) {
 
-    console.log(item);
 
     return (
         <div>
@@ -15,8 +14,8 @@ export default function Experience({item, panelIsVisible}) {
                 <div className='experience-container' >
                     <h2>{item.title} Experience</h2>
                     <div className='exp-card-container' >
-                        {item.children.map(thisItem => {
-                            return <ExperienceCard item={thisItem} />
+                        {item.children.map((thisItem, index) => {
+                            return <ExperienceCard key={index} item={thisItem} />
                         })}
                     </div>
                     

@@ -11,8 +11,8 @@ export default function Education({item, panelIsVisible}) {
             <div className="education-container" >
                 <h2>Education</h2>
                 <div className='education-card-container' >
-                    {item.map(thisItem => {
-                        return <EducationCard item={thisItem} />
+                    {item.map((thisItem, index) => {
+                        return <EducationCard item={thisItem} key={index} />
                     })}
                 </div>
             </div>

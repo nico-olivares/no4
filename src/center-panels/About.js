@@ -10,14 +10,14 @@ function About({ panelIsVisible }) {
             <div className="about-container">
                 <Transition visible={panelIsVisible} animation='fly left' duration={1500}>
                     <div>
-                        <p>This webpage was designed and implemented by <strong>Nicolas Olivares</strong> using the following: <br/>
+                        <p>This webpage was designed and implemented by <strong>Nicolas Olivares</strong> using the following:</p> <br/>
                         
                         <ul>
                             <li>React and the Semantic UI framework.</li>
                             <li>With React: JavaScript, HTML, CSS.</li>
                         </ul>
                         <br/>
-                        Please explore and enjoy!
+                        <p>Please explore and enjoy!</p>
                         <br/>
                         <ul>
                             <li>The photos in the landing page are of places that are dear to me. They have all been taken by me personally.</li>
@@ -29,7 +29,7 @@ function About({ panelIsVisible }) {
                         component has a small glitch and the whole app needs to be optimized for tablets and phones.<br />
                         I will keep working and making it better.
                         </p>
-                        </p>
+                        
                     </div>
                 </Transition >
             </div>

@@ -3,7 +3,6 @@ This is Nicolas Olivares' personal website.
 
 # To-do
  - Fix Carousel first and last elements animation.
- - Menu needs to retreat on click on phone. Be smaller for phone.
  - References have to be only 1 for laptop and smaller
  - Optimize for phone and tablet.
 

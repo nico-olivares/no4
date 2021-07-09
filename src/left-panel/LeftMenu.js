@@ -9,7 +9,7 @@ import getLifeItem from '../data/lifeItems';
 
 
 //implements the left menu. The menu is a list of all the possible options
-export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible, activeIndex, setActiveIndex }) {
+export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightPanelName, setPanelIsVisible, activeIndex, setActiveIndex, setExpandedMenu, isPhone }) {
 	
 	
 
@@ -27,6 +27,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
 				<MenuTitle
 					key='2'
@@ -39,6 +41,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
 				<MenuTitle
 					key='3'
@@ -51,6 +55,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
 				<MenuTitle
 					key='4'
@@ -63,6 +69,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
         <MenuTitle
 					key='5'
@@ -75,6 +83,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
         <MenuTitle
 					key='6'
@@ -87,6 +97,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
         <MenuTitle
 					key='7'
@@ -99,6 +111,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
         <MenuTitle
 					key='8'
@@ -111,6 +125,8 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
         <MenuTitle
 					key='9'
@@ -123,19 +139,9 @@ export default function LeftMenu({ setCenterPanelName, setRightPanelName, rightP
 					setRightPanelName={setRightPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					setExpandedMenu={setExpandedMenu}
+					isPhone={isPhone}
 				/>
-        {/* <MenuTitle
-					key='9'
-					index='9'
-					title='Contact'
-					children={[]}
-					activeIndex={activeIndex}
-					setActiveIndex={setActiveIndex}
-					setCenterPanelName={setCenterPanelName}
-					setRightPanelName={setRightPanelName}
-					rightPanelName={rightPanelName}
-					setPanelIsVisible={setPanelIsVisible}
-				/> */}
 
 			</Accordion>
 		</div>

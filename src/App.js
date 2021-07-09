@@ -9,6 +9,7 @@ import getReferences from './data/references';
 function App() {
 
 	const [ expandedMenu, setExpandedMenu ] = useState(true);
+	const [ isPhone, setIsPhone ] = useState(false);
 	const [ centerPanelName, setCenterPanelName ] = useState({title: 'splash', subtitle: ''});
 	const [ rightPanelName, setRightPanelName ] = useState({title: 'Welcome', subtitle: ''});
 	const [ panelIsVisible, setPanelIsVisible ] = useState(true);
@@ -25,8 +26,12 @@ function App() {
 useEffect(() => {
 	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('done with fetch 1'));
 	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('done with fetch 2'));
-	
-});
+	if (window.screen.width < 450) {
+		setExpandedMenu(false);
+		setIsPhone(true);
+	}
+	console.log('first use effect');
+}, []);
   
 
 	return (
@@ -44,6 +49,8 @@ useEffect(() => {
 					centerPanelName={centerPanelName}
 					rightPanelName={rightPanelName}
 					setPanelIsVisible={setPanelIsVisible}
+					isPhone={isPhone}
+					
 				/>
 			</div>
 			<div

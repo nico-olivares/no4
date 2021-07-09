@@ -13,7 +13,9 @@ export default function MenuTitle({
 	setCenterPanelName,
 	setRightPanelName,
 	rightPanelName,
-	setPanelIsVisible
+	setPanelIsVisible,
+	setExpandedMenu,
+	isPhone
 }) {
 	const [activeMenu, setActiveMenu] = useState('');
 
@@ -26,6 +28,8 @@ export default function MenuTitle({
 			setPanelIsVisible(false);
 			setTimeout(setPanels, 0);
 		}
+
+		if (isPhone && children.length === 0) setExpandedMenu(false);
 	};
 
 	const setPanels = () => {
@@ -60,6 +64,8 @@ export default function MenuTitle({
 									setRightPanelName={setRightPanelName}
 									rightPanelName={rightPanelName}
 									setPanelIsVisible={setPanelIsVisible}
+									setExpandedMenu={setExpandedMenu}
+									isPhone={isPhone}
 								/>
 							);
 						})}

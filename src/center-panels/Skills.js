@@ -17,8 +17,8 @@ export default function Skills({panelIsVisible}) {
                     <h2> Skills</h2>
                     <div className='skill-subcontainer' >
                         <Container className='skill-cards-container'  >
-                            {skillsArray.map(item => {
-                                return <SkillCard item={item.skillGroups} title={item.title} />
+                            {skillsArray.map((item, index) => {
+                                return <SkillCard key={index} item={item.skillGroups} title={item.title} />
                             })}
                         </Container>
                     </div>
