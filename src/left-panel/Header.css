@@ -13,26 +13,26 @@
     cursor: pointer;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 800px) {
     .logo {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 4px;
         margin: 5px;
     }
     
     .header-name {
-        font-size: 15px;
+        font-size: 12px;
         margin-bottom: 0px;
     }
     
     .header-title {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 801px) {
     .logo {
         width: 60px;
         height: 60px;
