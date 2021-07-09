@@ -9,7 +9,7 @@ export default function References({ panelIsVisible, referenceArray }) {
     let [ numberOfReferences, setNumberOfReferences ] = useState(2);
 
 useEffect(() => {
-    if (window.screen.width < 900) setNumberOfReferences(1);
+    if (window.screen.width < 1500) setNumberOfReferences(1);
 }, [])
 
 
