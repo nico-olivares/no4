@@ -5,7 +5,7 @@ import { Card } from 'semantic-ui-react';
 import LeftPanel from './left-panel/LeftPanel';
 import CenterPanel from './center-panels/CenterPanel';
 import getReferences from './data/references';
-import {getSplashPhotos, getFamilyPhotos, getHobbiesPhotos, getBiographyPhotos} from './data/photos';
+import { getHobbiesPhotos } from './data/photos';
 
 function App() {
 
@@ -39,9 +39,7 @@ useEffect(() => {
 		setExpandedMenu(false);
 		setIsPhone(true);
 	}
-	// preloadArrayOfPhotos(getSplashPhotos());
-	// preloadArrayOfPhotos(getFamilyPhotos());
-	// preloadArrayOfPhotos(getBiographyPhotos());
+	
 	preloadArrayOfPhotos(getHobbiesPhotos());
 }, []);
   

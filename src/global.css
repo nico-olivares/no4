@@ -4,8 +4,8 @@
         line-height: 20px;
     }
 
-    .note {
-        font-size: 10px;
+    .image-group p {
+        font-size: 12px;
     }
 }
 
@@ -15,8 +15,8 @@
         line-height: 30px;
     }
 
-    .note {
-        font-size: 12px;
+    .image-group p {
+        font-size: 14px;
     }
 }
 
@@ -26,8 +26,8 @@
         line-height: 30px;
     }
 
-    .note {
-        font-size: 14px;
+    .image-group p {
+        font-size: 16px;
     }
 }
 
@@ -37,7 +37,7 @@
         line-height: 40px;
     }
 
-    .note {
-        font-size: 18px;
+    .image-group p {
+        font-size: 24px;
     }
 }
