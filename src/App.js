@@ -13,6 +13,8 @@ function App() {
 	const [ isPhone, setIsPhone ] = useState(false);
 	const [ centerPanelName, setCenterPanelName ] = useState({title: 'splash', subtitle: ''});
 	const [ rightPanelName, setRightPanelName ] = useState({title: 'Welcome', subtitle: ''});
+
+	//panelIsVisible powers the animation. To animate a panel it has to be invisible first, then appear with the animation.
 	const [ panelIsVisible, setPanelIsVisible ] = useState(true);
 	const preload = ['https://panprep2.herokuapp.com/', 'https://web-key.herokuapp.com'];
 	const [ referenceArray ] = useState(getReferences().map((item, index) => {
