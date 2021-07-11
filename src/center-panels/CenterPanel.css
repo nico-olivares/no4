@@ -15,8 +15,7 @@
 
 @media (min-width: 769px) and (max-width: 1400px) {
     .life-photos {
-        width: 100%;
-        height: 100%;
+        
         max-width: 50vw;
         max-height: 45vw;
     }
@@ -24,8 +23,7 @@
 
 @media (min-width: 1401px) {
     .life-photos {
-        width: 100%;
-        height: 100%;
+        
         max-width: 25vw;
         max-height: 20vw;
     }
