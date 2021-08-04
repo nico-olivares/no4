@@ -1,5 +1,7 @@
 # My personal webpage
 This is Nicolas Olivares' personal website.
+Deployed to:
+https://nicolasolivares.dev
 
 # To-do
  - Fix Carousel first and last elements animation.
