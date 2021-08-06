@@ -15,3 +15,9 @@
 .single-skill-card > div > .skill-label {
     margin: 5px;
 }
+
+.skillATag {
+    text-decoration: none;
+    color: white;
+
+}

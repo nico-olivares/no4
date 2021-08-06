@@ -35,8 +35,8 @@ function App() {
 	}
 
 useEffect(() => {
-	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('done with fetch 1'));
-	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('done with fetch 2'));
+	fetch(preload[0], {mode: 'no-cors'}).then(() => console.log('fetch 1'));
+	fetch(preload[1], {mode: 'no-cors'}).then(() => console.log('fetch 2'));
 	if (window.screen.width < 450) {
 		setExpandedMenu(false);
 		setIsPhone(true);

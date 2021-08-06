@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Transition, Icon } from 'semantic-ui-react';
+import { Transition, Icon, Label } from 'semantic-ui-react';
 import './Carousel.css'
 
 
@@ -9,9 +9,11 @@ import './Carousel.css'
  * @param {Boolean} horizontal default true. Whether the carousel will display horizontally or vertically.
  * @param {int} duration the duration each element will be displayed for. In milliseconds.
  * @param {int} numberShowing the number of elements to be displayed at one time. Default is 1, but it could be 2 or 3 as well. Max 3.
+ * @param {String} pagerColor color of the page counter. Options are: red, orange, yellow, olive, green, teal, blue, violet, purple, pink, brown, grey, black
+ * @param {String} pagerSize size of the page counter. Options are: mini, tiny, small, medium, large, big, huge, massive
  * @returns 
  */
-export default function Carousel({ componentArray, horizontal = true, duration = 3000, numberShowing = 1, animationSpeed = 300 }) {
+export default function Carousel({ componentArray, horizontal = true, duration = 3000, numberShowing = 1, animationSpeed = 300, pagerColor = 'teal', pagerSize = 'huge' }) {
 
     //keeps track of the component that should be showing. If there's more than one component showing, this will be the anchor component.
     const [ activeIndex, setActiveIndex ] = useState(0);
@@ -88,7 +90,10 @@ export default function Carousel({ componentArray, horizontal = true, duration =
                     }
                     clearTimeout(timer);
                 }} />
-                    
+                <Label className={horizontal ? 'horizontalPager' : 'verticalPager'} color='teal' size='huge' >
+                    {`${numberShowing === 3 ? (activeIndex + 1) + '-' + (activeIndex + 2) + '-' + (activeIndex + 3) 
+                    : numberShowing === 2 ? (activeIndex + 1) + '-' + (activeIndex + 2) : activeIndex + 1} / ${componentArray.length}`}
+                </Label>
 
             </div>
         )
